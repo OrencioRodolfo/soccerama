@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
+import standings from './standings'
 
 export default combineReducers({
-  sample: (state = { a: true }) => state,
+  standings,
 })

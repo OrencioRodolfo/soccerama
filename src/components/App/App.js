@@ -1,10 +1,14 @@
 import React from 'react'
 import { Provider } from 'react-redux'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import PropTypes from 'prop-types'
+import Home from '../Home/Home'
 
 const App = props => (
   <Provider store={props.store}>
-    <h1>Soccerama</h1>
+    <MuiThemeProvider>
+      <Home />
+    </MuiThemeProvider>
   </Provider>
 )
 
