@@ -13,6 +13,12 @@ const request = (url, data = {}, method = GET) => axios({
   },
 })
   .then(res => res.data)
-  .catch(err => console.error(err))
+  .catch((error) => {
+    const exception = error.response ? error.response.data.error : {
+      code: null,
+      message: error.message,
+    }
+    throw exception
+  })
 
 export default request

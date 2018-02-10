@@ -5,10 +5,17 @@ import { createStore, applyMiddleware } from 'redux'
 import promiseMiddleware from 'redux-promise-middleware'
 import App from './components/App/App'
 import reducers from './store/reducers'
+import pendingRequestMW from './store/middlewares/pending-requests'
+import errorHandlerMW from './store/middlewares/error-handler'
 
 const store = createStore(
   reducers,
-  applyMiddleware(promiseMiddleware()),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), // eslint-disable-line
+  applyMiddleware(
+    promiseMiddleware(),
+    pendingRequestMW,
+    errorHandlerMW,
+  ),
 )
 
 const render = (Component) => {
