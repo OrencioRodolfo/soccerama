@@ -5,10 +5,14 @@ import { createStore, applyMiddleware } from 'redux'
 import promiseMiddleware from 'redux-promise-middleware'
 import App from './components/App/App'
 import reducers from './store/reducers'
+import pendingRequestMW from './store/middlewares/pending-requests'
 
 const store = createStore(
   reducers,
-  applyMiddleware(promiseMiddleware()),
+  applyMiddleware(
+    promiseMiddleware(),
+    pendingRequestMW,
+  ),
 )
 
 const render = (Component) => {

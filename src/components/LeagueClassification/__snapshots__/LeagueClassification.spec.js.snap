@@ -17,20 +17,28 @@ ShallowWrapper {
     standings={
       Array [
         Object {
-          "overall": Object {
-            "draw": 3,
-            "games_played": 4,
-            "goals_scored": 5,
-            "lost": 6,
-            "won": 7,
-          },
-          "points": 8,
-          "position": 2,
-          "team_id": 1,
-          "team_name": "sample",
-          "total": Object {
-            "goal_difference": "+1",
-          },
+          "difference": "+8",
+          "draw": 5,
+          "goal": 7,
+          "id": 1,
+          "lost": 6,
+          "name": "sample",
+          "played": 3,
+          "points": 9,
+          "position": 1,
+          "won": 4,
+        },
+        Object {
+          "difference": "+80",
+          "draw": 50,
+          "goal": 70,
+          "id": 10,
+          "lost": 60,
+          "name": "sample2",
+          "played": 30,
+          "points": 90,
+          "position": 10,
+          "won": 40,
         },
       ]
     }
@@ -47,119 +55,157 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "allRowsSelected": false,
       "children": Array [
-        <TableHeader
-          adjustForCheckbox={false}
-          displaySelectAll={false}
-          enableSelectAll={true}
-          selectAllSelected={false}
+        <TableHead
+          component="thead"
         >
-          <TableRow
-            displayBorder={true}
-            hoverable={false}
-            hovered={false}
-            selectable={true}
-            striped={false}
-          >
-            <TableHeaderColumn>
-              Position
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Team name
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Played
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Won
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Drawn
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Lost
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Goal
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Difference
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Points
-            </TableHeaderColumn>
-          </TableRow>
-        </TableHeader>,
+          <WithStyles(TableRow)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Position
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Team name
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Played
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Won
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Drawn
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Lost
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Goal
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Difference
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Points
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+          </WithStyles(TableRow)>
+        </TableHead>,
         <TableBody
-          allRowsSelected={false}
-          deselectOnClickaway={true}
-          displayRowCheckbox={false}
-          multiSelectable={false}
-          preScanRows={true}
-          selectable={true}
-          style={Object {}}
+          component="tbody"
         >
-          <TableRow
-            displayBorder={true}
-            hoverable={false}
-            hovered={false}
-            selectable={true}
-            striped={false}
-          >
-            <TableRowColumn
-              hoverable={false}
-            >
+          <WithStyles(TableRow)>
+            <WithStyles(TableCell)>
               1
-            </TableRowColumn>
-            <TableRowColumn
-              hoverable={false}
-            >
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
               sample
-            </TableRowColumn>
-            <TableRowColumn
-              hoverable={false}
-            >
-              4
-            </TableRowColumn>
-            <TableRowColumn
-              hoverable={false}
-            >
-              7
-            </TableRowColumn>
-            <TableRowColumn
-              hoverable={false}
-            >
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
               3
-            </TableRowColumn>
-            <TableRowColumn
-              hoverable={false}
-            >
-              6
-            </TableRowColumn>
-            <TableRowColumn
-              hoverable={false}
-            >
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              4
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
               5
-            </TableRowColumn>
-            <TableRowColumn
-              hoverable={false}
-            >
-              +1
-            </TableRowColumn>
-            <TableRowColumn
-              hoverable={false}
-            >
-              8
-            </TableRowColumn>
-          </TableRow>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              6
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              7
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              +8
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              9
+            </WithStyles(TableCell)>
+          </WithStyles(TableRow)>
+          <WithStyles(TableRow)>
+            <WithStyles(TableCell)>
+              10
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              sample2
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              30
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              40
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              50
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              60
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              70
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              +80
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              90
+            </WithStyles(TableCell)>
+          </WithStyles(TableRow)>
         </TableBody>,
       ],
-      "fixedFooter": true,
-      "fixedHeader": true,
-      "height": "inherit",
-      "multiSelectable": false,
-      "selectable": true,
     },
     "ref": null,
     "rendered": Array [
@@ -168,45 +214,90 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "adjustForCheckbox": false,
-          "children": <TableRow
-            displayBorder={true}
-            hoverable={false}
-            hovered={false}
-            selectable={true}
-            striped={false}
-          >
-            <TableHeaderColumn>
-              Position
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Team name
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Played
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Won
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Drawn
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Lost
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Goal
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Difference
-            </TableHeaderColumn>
-            <TableHeaderColumn>
-              Points
-            </TableHeaderColumn>
-          </TableRow>,
-          "displaySelectAll": false,
-          "enableSelectAll": true,
-          "selectAllSelected": false,
+          "children": <WithStyles(TableRow)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Position
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Team name
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Played
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Won
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Drawn
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Lost
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Goal
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Difference
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+            <WithStyles(TableCell)>
+              <WithStyles(TableSortLabel)
+                active={true}
+                direction="asc"
+                onClick={[Function]}
+              >
+                Points
+              </WithStyles(TableSortLabel)>
+            </WithStyles(TableCell)>
+          </WithStyles(TableRow)>,
+          "component": "thead",
         },
         "ref": null,
         "rendered": Object {
@@ -215,139 +306,359 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <TableHeaderColumn>
-                Position
-              </TableHeaderColumn>,
-              <TableHeaderColumn>
-                Team name
-              </TableHeaderColumn>,
-              <TableHeaderColumn>
-                Played
-              </TableHeaderColumn>,
-              <TableHeaderColumn>
-                Won
-              </TableHeaderColumn>,
-              <TableHeaderColumn>
-                Drawn
-              </TableHeaderColumn>,
-              <TableHeaderColumn>
-                Lost
-              </TableHeaderColumn>,
-              <TableHeaderColumn>
-                Goal
-              </TableHeaderColumn>,
-              <TableHeaderColumn>
-                Difference
-              </TableHeaderColumn>,
-              <TableHeaderColumn>
-                Points
-              </TableHeaderColumn>,
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Position
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>,
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Team name
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>,
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Played
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>,
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Won
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>,
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Drawn
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>,
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Lost
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>,
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Goal
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>,
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Difference
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>,
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Points
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>,
             ],
-            "displayBorder": true,
-            "hoverable": false,
-            "hovered": false,
-            "selectable": true,
-            "striped": false,
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "position",
               "nodeType": "class",
               "props": Object {
-                "children": "Position",
+                "children": <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Position
+                </WithStyles(TableSortLabel)>,
               },
               "ref": null,
-              "rendered": "Position",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": true,
+                  "children": "Position",
+                  "direction": "asc",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Position",
+                "type": [Function],
+              },
               "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "name",
               "nodeType": "class",
               "props": Object {
-                "children": "Team name",
+                "children": <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Team name
+                </WithStyles(TableSortLabel)>,
               },
               "ref": null,
-              "rendered": "Team name",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": true,
+                  "children": "Team name",
+                  "direction": "asc",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Team name",
+                "type": [Function],
+              },
               "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "played",
               "nodeType": "class",
               "props": Object {
-                "children": "Played",
+                "children": <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Played
+                </WithStyles(TableSortLabel)>,
               },
               "ref": null,
-              "rendered": "Played",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": true,
+                  "children": "Played",
+                  "direction": "asc",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Played",
+                "type": [Function],
+              },
               "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "won",
               "nodeType": "class",
               "props": Object {
-                "children": "Won",
+                "children": <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Won
+                </WithStyles(TableSortLabel)>,
               },
               "ref": null,
-              "rendered": "Won",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": true,
+                  "children": "Won",
+                  "direction": "asc",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Won",
+                "type": [Function],
+              },
               "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "draw",
               "nodeType": "class",
               "props": Object {
-                "children": "Drawn",
+                "children": <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Drawn
+                </WithStyles(TableSortLabel)>,
               },
               "ref": null,
-              "rendered": "Drawn",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": true,
+                  "children": "Drawn",
+                  "direction": "asc",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Drawn",
+                "type": [Function],
+              },
               "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "lost",
               "nodeType": "class",
               "props": Object {
-                "children": "Lost",
+                "children": <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Lost
+                </WithStyles(TableSortLabel)>,
               },
               "ref": null,
-              "rendered": "Lost",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": true,
+                  "children": "Lost",
+                  "direction": "asc",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Lost",
+                "type": [Function],
+              },
               "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "goal",
               "nodeType": "class",
               "props": Object {
-                "children": "Goal",
+                "children": <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Goal
+                </WithStyles(TableSortLabel)>,
               },
               "ref": null,
-              "rendered": "Goal",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": true,
+                  "children": "Goal",
+                  "direction": "asc",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Goal",
+                "type": [Function],
+              },
               "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "difference",
               "nodeType": "class",
               "props": Object {
-                "children": "Difference",
+                "children": <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Difference
+                </WithStyles(TableSortLabel)>,
               },
               "ref": null,
-              "rendered": "Difference",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": true,
+                  "children": "Difference",
+                  "direction": "asc",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Difference",
+                "type": [Function],
+              },
               "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "points",
               "nodeType": "class",
               "props": Object {
-                "children": "Points",
+                "children": <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Points
+                </WithStyles(TableSortLabel)>,
               },
               "ref": null,
-              "rendered": "Points",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": true,
+                  "children": "Points",
+                  "direction": "asc",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Points",
+                "type": [Function],
+              },
               "type": [Function],
             },
           ],
@@ -360,68 +671,67 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "allRowsSelected": false,
           "children": Array [
-            <TableRow
-              displayBorder={true}
-              hoverable={false}
-              hovered={false}
-              selectable={true}
-              striped={false}
-            >
-              <TableRowColumn
-                hoverable={false}
-              >
+            <WithStyles(TableRow)>
+              <WithStyles(TableCell)>
                 1
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
                 sample
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
-                4
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
-                7
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
                 3
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
-                6
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                4
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
                 5
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
-                +1
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
-                8
-              </TableRowColumn>
-            </TableRow>,
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                6
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                7
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                +8
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                9
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>,
+            <WithStyles(TableRow)>
+              <WithStyles(TableCell)>
+                10
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                sample2
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                30
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                40
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                50
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                60
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                70
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                +80
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                90
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>,
           ],
-          "deselectOnClickaway": true,
-          "displayRowCheckbox": false,
-          "multiSelectable": false,
-          "preScanRows": true,
-          "selectable": true,
-          "style": Object {},
+          "component": "tbody",
         },
         "ref": null,
         "rendered": Array [
@@ -431,57 +741,34 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                <TableRowColumn
-                  hoverable={false}
-                >
+                <WithStyles(TableCell)>
                   1
-                </TableRowColumn>,
-                <TableRowColumn
-                  hoverable={false}
-                >
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
                   sample
-                </TableRowColumn>,
-                <TableRowColumn
-                  hoverable={false}
-                >
-                  4
-                </TableRowColumn>,
-                <TableRowColumn
-                  hoverable={false}
-                >
-                  7
-                </TableRowColumn>,
-                <TableRowColumn
-                  hoverable={false}
-                >
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
                   3
-                </TableRowColumn>,
-                <TableRowColumn
-                  hoverable={false}
-                >
-                  6
-                </TableRowColumn>,
-                <TableRowColumn
-                  hoverable={false}
-                >
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  4
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
                   5
-                </TableRowColumn>,
-                <TableRowColumn
-                  hoverable={false}
-                >
-                  +1
-                </TableRowColumn>,
-                <TableRowColumn
-                  hoverable={false}
-                >
-                  8
-                </TableRowColumn>,
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  6
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  7
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  +8
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  9
+                </WithStyles(TableCell)>,
               ],
-              "displayBorder": true,
-              "hoverable": false,
-              "hovered": false,
-              "selectable": true,
-              "striped": false,
             },
             "ref": null,
             "rendered": Array [
@@ -491,7 +778,6 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": 1,
-                  "hoverable": false,
                 },
                 "ref": null,
                 "rendered": 1,
@@ -503,7 +789,6 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": "sample",
-                  "hoverable": false,
                 },
                 "ref": null,
                 "rendered": "sample",
@@ -514,32 +799,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": 4,
-                  "hoverable": false,
-                },
-                "ref": null,
-                "rendered": 4,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": 7,
-                  "hoverable": false,
-                },
-                "ref": null,
-                "rendered": 7,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
                   "children": 3,
-                  "hoverable": false,
                 },
                 "ref": null,
                 "rendered": 3,
@@ -550,11 +810,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": 6,
-                  "hoverable": false,
+                  "children": 4,
                 },
                 "ref": null,
-                "rendered": 6,
+                "rendered": 4,
                 "type": [Function],
               },
               Object {
@@ -563,7 +822,6 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": 5,
-                  "hoverable": false,
                 },
                 "ref": null,
                 "rendered": 5,
@@ -574,11 +832,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": "+1",
-                  "hoverable": false,
+                  "children": 6,
                 },
                 "ref": null,
-                "rendered": "+1",
+                "rendered": 6,
                 "type": [Function],
               },
               Object {
@@ -586,11 +843,171 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": 8,
-                  "hoverable": false,
+                  "children": 7,
                 },
                 "ref": null,
-                "rendered": 8,
+                "rendered": 7,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "+8",
+                },
+                "ref": null,
+                "rendered": "+8",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 9,
+                },
+                "ref": null,
+                "rendered": 9,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "10",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(TableCell)>
+                  10
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  sample2
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  30
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  40
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  50
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  60
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  70
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  +80
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  90
+                </WithStyles(TableCell)>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 10,
+                },
+                "ref": null,
+                "rendered": 10,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "sample2",
+                },
+                "ref": null,
+                "rendered": "sample2",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 30,
+                },
+                "ref": null,
+                "rendered": 30,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 40,
+                },
+                "ref": null,
+                "rendered": 40,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 50,
+                },
+                "ref": null,
+                "rendered": 50,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 60,
+                },
+                "ref": null,
+                "rendered": 60,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 70,
+                },
+                "ref": null,
+                "rendered": 70,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "+80",
+                },
+                "ref": null,
+                "rendered": "+80",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 90,
+                },
+                "ref": null,
+                "rendered": 90,
                 "type": [Function],
               },
             ],
@@ -608,119 +1025,157 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "allRowsSelected": false,
         "children": Array [
-          <TableHeader
-            adjustForCheckbox={false}
-            displaySelectAll={false}
-            enableSelectAll={true}
-            selectAllSelected={false}
+          <TableHead
+            component="thead"
           >
-            <TableRow
-              displayBorder={true}
-              hoverable={false}
-              hovered={false}
-              selectable={true}
-              striped={false}
-            >
-              <TableHeaderColumn>
-                Position
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Team name
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Played
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Won
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Drawn
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Lost
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Goal
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Difference
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Points
-              </TableHeaderColumn>
-            </TableRow>
-          </TableHeader>,
+            <WithStyles(TableRow)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Position
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Team name
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Played
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Won
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Drawn
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Lost
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Goal
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Difference
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Points
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>
+          </TableHead>,
           <TableBody
-            allRowsSelected={false}
-            deselectOnClickaway={true}
-            displayRowCheckbox={false}
-            multiSelectable={false}
-            preScanRows={true}
-            selectable={true}
-            style={Object {}}
+            component="tbody"
           >
-            <TableRow
-              displayBorder={true}
-              hoverable={false}
-              hovered={false}
-              selectable={true}
-              striped={false}
-            >
-              <TableRowColumn
-                hoverable={false}
-              >
+            <WithStyles(TableRow)>
+              <WithStyles(TableCell)>
                 1
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
                 sample
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
-                4
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
-                7
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
                 3
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
-                6
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                4
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
                 5
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
-                +1
-              </TableRowColumn>
-              <TableRowColumn
-                hoverable={false}
-              >
-                8
-              </TableRowColumn>
-            </TableRow>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                6
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                7
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                +8
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                9
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>
+            <WithStyles(TableRow)>
+              <WithStyles(TableCell)>
+                10
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                sample2
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                30
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                40
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                50
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                60
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                70
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                +80
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                90
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>
           </TableBody>,
         ],
-        "fixedFooter": true,
-        "fixedHeader": true,
-        "height": "inherit",
-        "multiSelectable": false,
-        "selectable": true,
       },
       "ref": null,
       "rendered": Array [
@@ -729,45 +1184,90 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "adjustForCheckbox": false,
-            "children": <TableRow
-              displayBorder={true}
-              hoverable={false}
-              hovered={false}
-              selectable={true}
-              striped={false}
-            >
-              <TableHeaderColumn>
-                Position
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Team name
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Played
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Won
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Drawn
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Lost
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Goal
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Difference
-              </TableHeaderColumn>
-              <TableHeaderColumn>
-                Points
-              </TableHeaderColumn>
-            </TableRow>,
-            "displaySelectAll": false,
-            "enableSelectAll": true,
-            "selectAllSelected": false,
+            "children": <WithStyles(TableRow)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Position
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Team name
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Played
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Won
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Drawn
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Lost
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Goal
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Difference
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+              <WithStyles(TableCell)>
+                <WithStyles(TableSortLabel)
+                  active={true}
+                  direction="asc"
+                  onClick={[Function]}
+                >
+                  Points
+                </WithStyles(TableSortLabel)>
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>,
+            "component": "thead",
           },
           "ref": null,
           "rendered": Object {
@@ -776,139 +1276,359 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                <TableHeaderColumn>
-                  Position
-                </TableHeaderColumn>,
-                <TableHeaderColumn>
-                  Team name
-                </TableHeaderColumn>,
-                <TableHeaderColumn>
-                  Played
-                </TableHeaderColumn>,
-                <TableHeaderColumn>
-                  Won
-                </TableHeaderColumn>,
-                <TableHeaderColumn>
-                  Drawn
-                </TableHeaderColumn>,
-                <TableHeaderColumn>
-                  Lost
-                </TableHeaderColumn>,
-                <TableHeaderColumn>
-                  Goal
-                </TableHeaderColumn>,
-                <TableHeaderColumn>
-                  Difference
-                </TableHeaderColumn>,
-                <TableHeaderColumn>
-                  Points
-                </TableHeaderColumn>,
+                <WithStyles(TableCell)>
+                  <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Position
+                  </WithStyles(TableSortLabel)>
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Team name
+                  </WithStyles(TableSortLabel)>
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Played
+                  </WithStyles(TableSortLabel)>
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Won
+                  </WithStyles(TableSortLabel)>
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Drawn
+                  </WithStyles(TableSortLabel)>
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Lost
+                  </WithStyles(TableSortLabel)>
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Goal
+                  </WithStyles(TableSortLabel)>
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Difference
+                  </WithStyles(TableSortLabel)>
+                </WithStyles(TableCell)>,
+                <WithStyles(TableCell)>
+                  <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Points
+                  </WithStyles(TableSortLabel)>
+                </WithStyles(TableCell)>,
               ],
-              "displayBorder": true,
-              "hoverable": false,
-              "hovered": false,
-              "selectable": true,
-              "striped": false,
             },
             "ref": null,
             "rendered": Array [
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "position",
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Position",
+                  "children": <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Position
+                  </WithStyles(TableSortLabel)>,
                 },
                 "ref": null,
-                "rendered": "Position",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": true,
+                    "children": "Position",
+                    "direction": "asc",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Position",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "name",
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Team name",
+                  "children": <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Team name
+                  </WithStyles(TableSortLabel)>,
                 },
                 "ref": null,
-                "rendered": "Team name",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": true,
+                    "children": "Team name",
+                    "direction": "asc",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Team name",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "played",
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Played",
+                  "children": <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Played
+                  </WithStyles(TableSortLabel)>,
                 },
                 "ref": null,
-                "rendered": "Played",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": true,
+                    "children": "Played",
+                    "direction": "asc",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Played",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "won",
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Won",
+                  "children": <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Won
+                  </WithStyles(TableSortLabel)>,
                 },
                 "ref": null,
-                "rendered": "Won",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": true,
+                    "children": "Won",
+                    "direction": "asc",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Won",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "draw",
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Drawn",
+                  "children": <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Drawn
+                  </WithStyles(TableSortLabel)>,
                 },
                 "ref": null,
-                "rendered": "Drawn",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": true,
+                    "children": "Drawn",
+                    "direction": "asc",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Drawn",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "lost",
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Lost",
+                  "children": <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Lost
+                  </WithStyles(TableSortLabel)>,
                 },
                 "ref": null,
-                "rendered": "Lost",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": true,
+                    "children": "Lost",
+                    "direction": "asc",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Lost",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "goal",
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Goal",
+                  "children": <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Goal
+                  </WithStyles(TableSortLabel)>,
                 },
                 "ref": null,
-                "rendered": "Goal",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": true,
+                    "children": "Goal",
+                    "direction": "asc",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Goal",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "difference",
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Difference",
+                  "children": <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Difference
+                  </WithStyles(TableSortLabel)>,
                 },
                 "ref": null,
-                "rendered": "Difference",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": true,
+                    "children": "Difference",
+                    "direction": "asc",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Difference",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "points",
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Points",
+                  "children": <WithStyles(TableSortLabel)
+                    active={true}
+                    direction="asc"
+                    onClick={[Function]}
+                  >
+                    Points
+                  </WithStyles(TableSortLabel)>,
                 },
                 "ref": null,
-                "rendered": "Points",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": true,
+                    "children": "Points",
+                    "direction": "asc",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Points",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
             ],
@@ -921,68 +1641,67 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "allRowsSelected": false,
             "children": Array [
-              <TableRow
-                displayBorder={true}
-                hoverable={false}
-                hovered={false}
-                selectable={true}
-                striped={false}
-              >
-                <TableRowColumn
-                  hoverable={false}
-                >
+              <WithStyles(TableRow)>
+                <WithStyles(TableCell)>
                   1
-                </TableRowColumn>
-                <TableRowColumn
-                  hoverable={false}
-                >
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
                   sample
-                </TableRowColumn>
-                <TableRowColumn
-                  hoverable={false}
-                >
-                  4
-                </TableRowColumn>
-                <TableRowColumn
-                  hoverable={false}
-                >
-                  7
-                </TableRowColumn>
-                <TableRowColumn
-                  hoverable={false}
-                >
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
                   3
-                </TableRowColumn>
-                <TableRowColumn
-                  hoverable={false}
-                >
-                  6
-                </TableRowColumn>
-                <TableRowColumn
-                  hoverable={false}
-                >
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  4
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
                   5
-                </TableRowColumn>
-                <TableRowColumn
-                  hoverable={false}
-                >
-                  +1
-                </TableRowColumn>
-                <TableRowColumn
-                  hoverable={false}
-                >
-                  8
-                </TableRowColumn>
-              </TableRow>,
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  6
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  7
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  +8
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  9
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>,
+              <WithStyles(TableRow)>
+                <WithStyles(TableCell)>
+                  10
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  sample2
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  30
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  40
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  50
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  60
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  70
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  +80
+                </WithStyles(TableCell)>
+                <WithStyles(TableCell)>
+                  90
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>,
             ],
-            "deselectOnClickaway": true,
-            "displayRowCheckbox": false,
-            "multiSelectable": false,
-            "preScanRows": true,
-            "selectable": true,
-            "style": Object {},
+            "component": "tbody",
           },
           "ref": null,
           "rendered": Array [
@@ -992,57 +1711,34 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": Array [
-                  <TableRowColumn
-                    hoverable={false}
-                  >
+                  <WithStyles(TableCell)>
                     1
-                  </TableRowColumn>,
-                  <TableRowColumn
-                    hoverable={false}
-                  >
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
                     sample
-                  </TableRowColumn>,
-                  <TableRowColumn
-                    hoverable={false}
-                  >
-                    4
-                  </TableRowColumn>,
-                  <TableRowColumn
-                    hoverable={false}
-                  >
-                    7
-                  </TableRowColumn>,
-                  <TableRowColumn
-                    hoverable={false}
-                  >
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
                     3
-                  </TableRowColumn>,
-                  <TableRowColumn
-                    hoverable={false}
-                  >
-                    6
-                  </TableRowColumn>,
-                  <TableRowColumn
-                    hoverable={false}
-                  >
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    4
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
                     5
-                  </TableRowColumn>,
-                  <TableRowColumn
-                    hoverable={false}
-                  >
-                    +1
-                  </TableRowColumn>,
-                  <TableRowColumn
-                    hoverable={false}
-                  >
-                    8
-                  </TableRowColumn>,
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    6
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    7
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    +8
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    9
+                  </WithStyles(TableCell)>,
                 ],
-                "displayBorder": true,
-                "hoverable": false,
-                "hovered": false,
-                "selectable": true,
-                "striped": false,
               },
               "ref": null,
               "rendered": Array [
@@ -1052,7 +1748,6 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 1,
-                    "hoverable": false,
                   },
                   "ref": null,
                   "rendered": 1,
@@ -1064,7 +1759,6 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": "sample",
-                    "hoverable": false,
                   },
                   "ref": null,
                   "rendered": "sample",
@@ -1075,32 +1769,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": 4,
-                    "hoverable": false,
-                  },
-                  "ref": null,
-                  "rendered": 4,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 7,
-                    "hoverable": false,
-                  },
-                  "ref": null,
-                  "rendered": 7,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
                     "children": 3,
-                    "hoverable": false,
                   },
                   "ref": null,
                   "rendered": 3,
@@ -1111,11 +1780,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": 6,
-                    "hoverable": false,
+                    "children": 4,
                   },
                   "ref": null,
-                  "rendered": 6,
+                  "rendered": 4,
                   "type": [Function],
                 },
                 Object {
@@ -1124,7 +1792,6 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 5,
-                    "hoverable": false,
                   },
                   "ref": null,
                   "rendered": 5,
@@ -1135,11 +1802,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": "+1",
-                    "hoverable": false,
+                    "children": 6,
                   },
                   "ref": null,
-                  "rendered": "+1",
+                  "rendered": 6,
                   "type": [Function],
                 },
                 Object {
@@ -1147,11 +1813,171 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": 8,
-                    "hoverable": false,
+                    "children": 7,
                   },
                   "ref": null,
-                  "rendered": 8,
+                  "rendered": 7,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "+8",
+                  },
+                  "ref": null,
+                  "rendered": "+8",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 9,
+                  },
+                  "ref": null,
+                  "rendered": 9,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "10",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(TableCell)>
+                    10
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    sample2
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    30
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    40
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    50
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    60
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    70
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    +80
+                  </WithStyles(TableCell)>,
+                  <WithStyles(TableCell)>
+                    90
+                  </WithStyles(TableCell)>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 10,
+                  },
+                  "ref": null,
+                  "rendered": 10,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "sample2",
+                  },
+                  "ref": null,
+                  "rendered": "sample2",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 30,
+                  },
+                  "ref": null,
+                  "rendered": 30,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 40,
+                  },
+                  "ref": null,
+                  "rendered": 40,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 50,
+                  },
+                  "ref": null,
+                  "rendered": 50,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 60,
+                  },
+                  "ref": null,
+                  "rendered": 60,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 70,
+                  },
+                  "ref": null,
+                  "rendered": 70,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "+80",
+                  },
+                  "ref": null,
+                  "rendered": "+80",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 90,
+                  },
+                  "ref": null,
+                  "rendered": 90,
                   "type": [Function],
                 },
               ],

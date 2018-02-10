@@ -29,7 +29,9 @@ const Img = styled.img`
 
 const Content = styled.div`
   flex-grow: 1;
+  flex-shrink: 0;
   padding: 30px 0;
+  overflow-x: scroll;
 `
 
 const Footer = styled.div`

@@ -1,6 +1,6 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import { DTableExampleSimple } from './LeagueClassification'
+import { shallow, mount } from 'enzyme'
+import { DTableExampleSimple, mapStateToProps } from './LeagueClassification'
 
 describe('LeagueClassification component', () => {
   let getStandings
@@ -9,20 +9,28 @@ describe('LeagueClassification component', () => {
     getStandings = jest.fn()
     standings = [
       {
-        team_id: 1,
-        team_name: 'sample',
-        position: 2,
-        overall: {
-          draw: 3,
-          games_played: 4,
-          goals_scored: 5,
-          lost: 6,
-          won: 7,
-        },
-        total: {
-          goal_difference: '+1',
-        },
-        points: 8,
+        id: 1,
+        position: 1,
+        name: 'sample',
+        played: 3,
+        won: 4,
+        draw: 5,
+        lost: 6,
+        goal: 7,
+        difference: '+8',
+        points: 9,
+      },
+      {
+        id: 10,
+        position: 10,
+        name: 'sample2',
+        played: 30,
+        won: 40,
+        draw: 50,
+        lost: 60,
+        goal: 70,
+        difference: '+80',
+        points: 90,
       },
     ]
   })
@@ -34,5 +42,69 @@ describe('LeagueClassification component', () => {
     />)
 
     expect(component).toMatchSnapshot()
+  })
+
+  describe('list sort', () => {
+    let wrapper
+    let inst
+
+    beforeEach(() => {
+      wrapper = shallow(<DTableExampleSimple
+        standings={standings}
+        getStandings={getStandings}
+      />)
+      inst = wrapper.instance()
+      inst.componentWillReceiveProps({
+        standings,
+      })
+    })
+
+    it('must sort descending by the team name', () => {
+      inst.createSortHandler('name')()
+
+      expect(inst.state.orderBy).toEqual('name')
+      expect(inst.state.order).toEqual('desc')
+    })
+
+    it('must sort ascending by the team points', () => {
+      inst.setState({
+        orderBy: 'points',
+        order: 'desc',
+      })
+      inst.createSortHandler('points')()
+
+      expect(inst.state.orderBy).toEqual('points')
+      expect(inst.state.order).toEqual('asc')
+    })
+  })
+
+  describe('mapStateToProps', () => {
+    it('must return an object with all the required fields', () => {
+      const state = {
+        standings: {
+          standings: [
+            {
+              team_id: 1,
+              team_name: 'sample',
+              overall: {
+                games_played: 3,
+                won: 4,
+                draw: 5,
+                lost: 6,
+                goals_scored: 7,
+              },
+              total: {
+                goal_difference: '+8',
+              },
+              points: 9,
+            },
+          ],
+        },
+      }
+      const result = mapStateToProps(state)
+      expect(result).toEqual({
+        standings: [standings[0]],
+      })
+    })
   })
 })
