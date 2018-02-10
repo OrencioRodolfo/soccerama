@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux'
-import standings from './standings'
+import httpInterceptor from './http-interceptor'
+import league from './league'
+import team from './team'
 
 export default combineReducers({
-  standings,
+  api: httpInterceptor,
+  league,
+  team,
 })

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import logo from '../../images/logo.png'
 import Link from '../Link/Link'
-import LeagueClassification from '../LeagueClassification/LeagueClassification'
+import League from '../League/League'
 
 const Page = styled.div`
   display: flex;
@@ -29,7 +29,9 @@ const Img = styled.img`
 
 const Content = styled.div`
   flex-grow: 1;
+  flex-shrink: 0;
   padding: 30px 0;
+  overflow-x: scroll;
 `
 
 const Footer = styled.div`
@@ -47,7 +49,7 @@ const Home = () => (
       </Link>
     </Head>
     <Content>
-      <LeagueClassification />
+      <League />
     </Content>
     <Footer>
       <Link href={url}>SportMonks</Link> provides fast and reliable data

@@ -40,21 +40,19 @@ describe('request service', () => {
     })
   })
 
-  it('must fail and handle the rejection', async () => {
-    mock.onGet(`${baseUrl}/sample`).reply(400, resMock)
-    global.console = {
-      error: jest.fn(),
+  it('must fail and handle the API error', async () => {
+    const error = {
+      message: 'sample',
     }
-
-    await request('sample').then(() => {
-      expect(console.error).toBeCalled()
+    mock.onGet(`${baseUrl}/sample`).reply(400, {
+      error,
     })
+    await expect(request('sample')).rejects.toThrow()
+    await expect(request('sample')).rejects.toEqual(error)
+  })
+
+  it('must fail and handle the generic error', async () => {
+    mock.onGet(`${baseUrl}/sample`).networkError()
+    await expect(request('sample')).rejects.toEqual({ message: 'Network Error' })
   })
 })
-
-// describe('request service', () => {
-//   it('must ....', async () => {
-//     request('sample')
-//     expect(1).toEqual(1)
-//   })
-// })
