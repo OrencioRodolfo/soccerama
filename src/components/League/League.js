@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Standing from '../Standing/Standing'
 import actions from '../../store/actions'
+import TeamDialog from '../Team/Team'
 
 const Title = styled.h1`
   text-align: center;
@@ -14,6 +15,7 @@ class League extends Component {
     getLeague: PropTypes.func.isRequired,
     getStandings: PropTypes.func.isRequired,
     getSeason: PropTypes.func.isRequired,
+    getTeam: PropTypes.func.isRequired,
     league: PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string,
@@ -23,6 +25,16 @@ class League extends Component {
       id: PropTypes.number,
       name: PropTypes.string,
     }).isRequired,
+    team: PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string,
+      logo: PropTypes.string,
+    }).isRequired,
+    squad: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string,
+      logo: PropTypes.string,
+    })).isRequired,
     standings: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.number.isRequired,
       position: PropTypes.number.isRequired,
@@ -37,6 +49,10 @@ class League extends Component {
     })).isRequired,
   }
 
+  state = {
+    queryTeam: false,
+  }
+
   componentDidMount() {
     this.fetchData(501)
   }
@@ -48,23 +64,43 @@ class League extends Component {
     })
   }
 
+  queryTeam = id => this.props.getTeam(id).then(() => {
+    this.setState({
+      queryTeam: true,
+    })
+  })
+
+  handleTeamDailogClose = () => {
+    this.setState({
+      queryTeam: false,
+    })
+  }
+
   render() {
     const { league, season } = this.props
     return (
       <div>
-        <button onClick={() => this.fetchData(501)}>Refresh</button>
-        <Title>{league.name} - {season.name}</Title>
+        {league.name && season.name && <Title>{league.name} - {season.name}</Title>}
+        <TeamDialog
+          open={this.state.queryTeam}
+          team={this.props.team}
+          squad={this.props.squad}
+          onClose={this.handleTeamDailogClose}
+        />
         <Standing
           standings={this.props.standings}
+          onTeamSelect={this.queryTeam}
         />
       </div>
     )
   }
 }
 
-const mapStateToProps = ({ league }) => ({
+const mapStateToProps = ({ league, team }) => ({
   league: league.details,
   season: league.season,
+  team: team.details,
+  squad: team.squad,
   standings: league.standings.map((item, index) => ({
     id: item.team_id,
     position: (index + 1),
@@ -83,6 +119,7 @@ export default connect(mapStateToProps, {
   getLeague: actions.getLeague,
   getStandings: actions.getStandings,
   getSeason: actions.getSeason,
+  getTeam: actions.getTeam,
 })(League)
 
 export {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, mount } from 'enzyme'
+import { shallow } from 'enzyme'
 import { DGlobalError, mapStateToProps } from './GlobalError'
 
 describe('Global error component', () => {

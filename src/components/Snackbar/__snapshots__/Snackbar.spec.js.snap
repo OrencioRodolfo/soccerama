@@ -97,3 +97,11 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`Global error component must render properly with default props 1`] = `
+<CustomSnackbar
+  message="sample"
+  onClose={[Function]}
+  open={false}
+/>
+`;

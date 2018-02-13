@@ -53,6 +53,6 @@ describe('request service', () => {
 
   it('must fail and handle the generic error', async () => {
     mock.onGet(`${baseUrl}/sample`).networkError()
-    await expect(request('sample')).rejects.toEqual({ message: 'Network Error' })
+    await expect(request('sample')).rejects.toEqual({ code: null, message: 'Network Error' })
   })
 })

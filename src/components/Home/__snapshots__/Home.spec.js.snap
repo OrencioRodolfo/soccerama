@@ -29,7 +29,7 @@ ShallowWrapper {
           </Link>
         </styled.div>,
         <styled.div>
-          <Connect(TableExampleSimple) />
+          <Connect(League) />
         </styled.div>,
         <styled.div>
           <Link
@@ -91,7 +91,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Connect(TableExampleSimple) />,
+          "children": <Connect(League) />,
         },
         "ref": null,
         "rendered": Object {
@@ -158,7 +158,7 @@ ShallowWrapper {
             </Link>
           </styled.div>,
           <styled.div>
-            <Connect(TableExampleSimple) />
+            <Connect(League) />
           </styled.div>,
           <styled.div>
             <Link
@@ -220,7 +220,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Connect(TableExampleSimple) />,
+            "children": <Connect(League) />,
           },
           "ref": null,
           "rendered": Object {
