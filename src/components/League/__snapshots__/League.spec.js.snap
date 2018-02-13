@@ -1,0 +1,433 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component mapStateToProps function must return the data related to the league, season, team, squad and standings 1`] = `
+Object {
+  "league": Object {},
+  "season": Object {},
+  "squad": Array [],
+  "standings": Array [
+    Object {
+      "difference": undefined,
+      "draw": undefined,
+      "goal": undefined,
+      "id": 1,
+      "lost": undefined,
+      "name": "sample",
+      "played": undefined,
+      "points": 10,
+      "position": 1,
+      "won": undefined,
+    },
+  ],
+  "team": Object {},
+}
+`;
+
+exports[`Home component must render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <League
+    getLeague={[Function]}
+    getSeason={[Function]}
+    getStandings={[Function]}
+    getTeam={[Function]}
+    league={
+      Object {
+        "currentSeasonId": 2,
+        "id": 1,
+        "name": "sample",
+      }
+    }
+    season={
+      Object {
+        "id": 1,
+        "name": "sample",
+      }
+    }
+    squad={
+      Array [
+        Object {
+          "id": 1,
+          "logo": "logo",
+          "name": "sample",
+        },
+        Object {
+          "id": 2,
+          "logo": "logo",
+          "name": "sample",
+        },
+      ]
+    }
+    standings={
+      Array [
+        Object {
+          "difference": "+8",
+          "draw": 5,
+          "goal": 7,
+          "id": 1,
+          "lost": 6,
+          "name": "sample",
+          "played": 3,
+          "points": 9,
+          "position": 2,
+          "won": 4,
+        },
+        Object {
+          "difference": "+8",
+          "draw": 5,
+          "goal": 7,
+          "id": 2,
+          "lost": 6,
+          "name": "sample",
+          "played": 3,
+          "points": 9,
+          "position": 2,
+          "won": 4,
+        },
+      ]
+    }
+    team={
+      Object {
+        "id": 1,
+        "logo": "logo",
+        "name": "sample",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <styled.h1>
+          sample
+           - 
+          sample
+        </styled.h1>,
+        <Connect(WithTheme(WithWidth(WithMobileDialog)))
+          onClose={[Function]}
+          open={false}
+          squad={
+            Array [
+              Object {
+                "id": 1,
+                "logo": "logo",
+                "name": "sample",
+              },
+              Object {
+                "id": 2,
+                "logo": "logo",
+                "name": "sample",
+              },
+            ]
+          }
+          team={
+            Object {
+              "id": 1,
+              "logo": "logo",
+              "name": "sample",
+            }
+          }
+        />,
+        <Standing
+          onTeamSelect={[Function]}
+          standings={
+            Array [
+              Object {
+                "difference": "+8",
+                "draw": 5,
+                "goal": 7,
+                "id": 1,
+                "lost": 6,
+                "name": "sample",
+                "played": 3,
+                "points": 9,
+                "position": 2,
+                "won": 4,
+              },
+              Object {
+                "difference": "+8",
+                "draw": 5,
+                "goal": 7,
+                "id": 2,
+                "lost": 6,
+                "name": "sample",
+                "played": 3,
+                "points": 9,
+                "position": 2,
+                "won": 4,
+              },
+            ]
+          }
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            "sample",
+            " - ",
+            "sample",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "sample",
+          " - ",
+          "sample",
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "onClose": [Function],
+          "open": false,
+          "squad": Array [
+            Object {
+              "id": 1,
+              "logo": "logo",
+              "name": "sample",
+            },
+            Object {
+              "id": 2,
+              "logo": "logo",
+              "name": "sample",
+            },
+          ],
+          "team": Object {
+            "id": 1,
+            "logo": "logo",
+            "name": "sample",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "onTeamSelect": [Function],
+          "standings": Array [
+            Object {
+              "difference": "+8",
+              "draw": 5,
+              "goal": 7,
+              "id": 1,
+              "lost": 6,
+              "name": "sample",
+              "played": 3,
+              "points": 9,
+              "position": 2,
+              "won": 4,
+            },
+            Object {
+              "difference": "+8",
+              "draw": 5,
+              "goal": 7,
+              "id": 2,
+              "lost": 6,
+              "name": "sample",
+              "played": 3,
+              "points": 9,
+              "position": 2,
+              "won": 4,
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <styled.h1>
+            sample
+             - 
+            sample
+          </styled.h1>,
+          <Connect(WithTheme(WithWidth(WithMobileDialog)))
+            onClose={[Function]}
+            open={false}
+            squad={
+              Array [
+                Object {
+                  "id": 1,
+                  "logo": "logo",
+                  "name": "sample",
+                },
+                Object {
+                  "id": 2,
+                  "logo": "logo",
+                  "name": "sample",
+                },
+              ]
+            }
+            team={
+              Object {
+                "id": 1,
+                "logo": "logo",
+                "name": "sample",
+              }
+            }
+          />,
+          <Standing
+            onTeamSelect={[Function]}
+            standings={
+              Array [
+                Object {
+                  "difference": "+8",
+                  "draw": 5,
+                  "goal": 7,
+                  "id": 1,
+                  "lost": 6,
+                  "name": "sample",
+                  "played": 3,
+                  "points": 9,
+                  "position": 2,
+                  "won": 4,
+                },
+                Object {
+                  "difference": "+8",
+                  "draw": 5,
+                  "goal": 7,
+                  "id": 2,
+                  "lost": 6,
+                  "name": "sample",
+                  "played": 3,
+                  "points": 9,
+                  "position": 2,
+                  "won": 4,
+                },
+              ]
+            }
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "sample",
+              " - ",
+              "sample",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "sample",
+            " - ",
+            "sample",
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "onClose": [Function],
+            "open": false,
+            "squad": Array [
+              Object {
+                "id": 1,
+                "logo": "logo",
+                "name": "sample",
+              },
+              Object {
+                "id": 2,
+                "logo": "logo",
+                "name": "sample",
+              },
+            ],
+            "team": Object {
+              "id": 1,
+              "logo": "logo",
+              "name": "sample",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "onTeamSelect": [Function],
+            "standings": Array [
+              Object {
+                "difference": "+8",
+                "draw": 5,
+                "goal": 7,
+                "id": 1,
+                "lost": 6,
+                "name": "sample",
+                "played": 3,
+                "points": 9,
+                "position": 2,
+                "won": 4,
+              },
+              Object {
+                "difference": "+8",
+                "draw": 5,
+                "goal": 7,
+                "id": 2,
+                "lost": 6,
+                "name": "sample",
+                "played": 3,
+                "points": 9,
+                "position": 2,
+                "won": 4,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

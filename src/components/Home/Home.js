@@ -36,7 +36,9 @@ const Content = styled.div`
 
 const Footer = styled.div`
   border-top: 1px solid grey;
-  padding: 10px 0;
+  padding: 20px 0;
+  font-size: 12px;
+  text-align: center;
 `
 
 const url = 'https://www.sportmonks.com'

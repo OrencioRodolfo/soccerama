@@ -8,12 +8,11 @@ const INITIAL_STATE = { details: {}, standings: [], season: {} }
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case FETCH_STANDINGS_FULFILLED: {
+    case FETCH_STANDINGS_FULFILLED:
       return {
         ...state,
         standings: action.payload,
       }
-    }
 
     case FETCH_LEAGUE_FULFILLED:
       return {

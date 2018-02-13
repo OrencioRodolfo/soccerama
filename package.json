@@ -1,7 +1,7 @@
 {
-  "name": "react-bootstrap",
+  "name": "soccerama",
   "version": "1.0.0",
-  "description": "A simple bootstrap for react web apps",
+  "description": "A simple soccer app",
   "main": "index.js",
   "author": "orenciorodolfo",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "test": "jest",
+    "coverage": "http-server ./coverage/lcov-report/",
     "lint": "eslint ./src",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
@@ -60,11 +61,13 @@
   },
   "devDependencies": {
     "conventional-changelog-cli": "^1.3.9",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.6.1"
+    "eslint-plugin-react": "^7.6.1",
+    "http-server": "^0.11.1"
   },
   "config": {
     "commitizen": {

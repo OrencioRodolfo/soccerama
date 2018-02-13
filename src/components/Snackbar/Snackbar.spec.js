@@ -18,6 +18,12 @@ describe('Global error component', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('must render properly with default props', () => {
+    expect(<DCustomSnackbar
+      message="sample"
+    />).toMatchSnapshot()
+  })
+
   it('must do nothing', () => {
     const result = wrapper.instance().handleClose(undefined, 'clickaway')
     expect(result).toEqual(undefined)

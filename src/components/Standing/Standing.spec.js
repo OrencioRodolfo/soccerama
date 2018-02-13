@@ -1,12 +1,15 @@
 import React from 'react'
-import { shallow, mount } from 'enzyme'
-import { DTableExampleSimple, mapStateToProps } from './LeagueClassification'
+import { shallow } from 'enzyme'
+import Standing from './Standing'
 
 describe('LeagueClassification component', () => {
   let getStandings
   let standings
+  let onTeamSelect
+
   beforeEach(() => {
     getStandings = jest.fn()
+    onTeamSelect = jest.fn()
     standings = [
       {
         id: 1,
@@ -36,9 +39,10 @@ describe('LeagueClassification component', () => {
   })
 
   it('must render properly', () => {
-    const component = shallow(<DTableExampleSimple
+    const component = shallow(<Standing
       standings={standings}
       getStandings={getStandings}
+      onTeamSelect={onTeamSelect}
     />)
 
     expect(component).toMatchSnapshot()
@@ -49,9 +53,10 @@ describe('LeagueClassification component', () => {
     let inst
 
     beforeEach(() => {
-      wrapper = shallow(<DTableExampleSimple
+      wrapper = shallow(<Standing
         standings={standings}
         getStandings={getStandings}
+        onTeamSelect={onTeamSelect}
       />)
       inst = wrapper.instance()
       inst.componentWillReceiveProps({
@@ -75,36 +80,6 @@ describe('LeagueClassification component', () => {
 
       expect(inst.state.orderBy).toEqual('points')
       expect(inst.state.order).toEqual('asc')
-    })
-  })
-
-  describe('mapStateToProps', () => {
-    it('must return an object with all the required fields', () => {
-      const state = {
-        standings: {
-          standings: [
-            {
-              team_id: 1,
-              team_name: 'sample',
-              overall: {
-                games_played: 3,
-                won: 4,
-                draw: 5,
-                lost: 6,
-                goals_scored: 7,
-              },
-              total: {
-                goal_difference: '+8',
-              },
-              points: 9,
-            },
-          ],
-        },
-      }
-      const result = mapStateToProps(state)
-      expect(result).toEqual({
-        standings: [standings[0]],
-      })
     })
   })
 })

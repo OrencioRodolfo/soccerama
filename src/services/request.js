@@ -14,10 +14,11 @@ const request = (url, data = {}, method = GET) => axios({
 })
   .then(res => res.data)
   .catch((error) => {
-    const exception = error.response ? error.response.data.error : {
+    const exception = (error.response && error.response.data.error) ? error.response.data.error : {
       code: null,
       message: error.message,
     }
+
     throw exception
   })
 
