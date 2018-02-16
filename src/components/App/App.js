@@ -7,7 +7,7 @@ import GlobalError from '../GlobalError/GlobalError'
 
 const App = props => (
   <Provider store={props.store}>
-    <div>
+    <div style={{ height: '100%' }}>
       <Loader />
       <GlobalError />
       <Home />

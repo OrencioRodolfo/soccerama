@@ -53,7 +53,9 @@ ShallowWrapper {
           component="thead"
         >
           <WithStyles(TableRow)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               <WithStyles(TableSortLabel)
                 active={true}
                 direction="asc"
@@ -62,7 +64,9 @@ ShallowWrapper {
                 Position
               </WithStyles(TableSortLabel)>
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               <WithStyles(TableSortLabel)
                 active={true}
                 direction="asc"
@@ -71,7 +75,9 @@ ShallowWrapper {
                 Team name
               </WithStyles(TableSortLabel)>
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               <WithStyles(TableSortLabel)
                 active={true}
                 direction="asc"
@@ -80,7 +86,9 @@ ShallowWrapper {
                 Played
               </WithStyles(TableSortLabel)>
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               <WithStyles(TableSortLabel)
                 active={true}
                 direction="asc"
@@ -89,7 +97,9 @@ ShallowWrapper {
                 Won
               </WithStyles(TableSortLabel)>
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               <WithStyles(TableSortLabel)
                 active={true}
                 direction="asc"
@@ -98,7 +108,9 @@ ShallowWrapper {
                 Drawn
               </WithStyles(TableSortLabel)>
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               <WithStyles(TableSortLabel)
                 active={true}
                 direction="asc"
@@ -107,7 +119,9 @@ ShallowWrapper {
                 Lost
               </WithStyles(TableSortLabel)>
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               <WithStyles(TableSortLabel)
                 active={true}
                 direction="asc"
@@ -116,7 +130,9 @@ ShallowWrapper {
                 Goal
               </WithStyles(TableSortLabel)>
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               <WithStyles(TableSortLabel)
                 active={true}
                 direction="asc"
@@ -125,7 +141,9 @@ ShallowWrapper {
                 Difference
               </WithStyles(TableSortLabel)>
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               <WithStyles(TableSortLabel)
                 active={true}
                 direction="asc"
@@ -140,68 +158,106 @@ ShallowWrapper {
           component="tbody"
         >
           <WithStyles(TableRow)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               1
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
-              <styled.span
+            <WithStyles(TableCell)
+              padding="none"
+            >
+              <styled.button
+                disabled={false}
                 onClick={[Function]}
               >
                 sample
-              </styled.span>
+              </styled.button>
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               3
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               4
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               5
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               6
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               7
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               +8
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               9
             </WithStyles(TableCell)>
           </WithStyles(TableRow)>
           <WithStyles(TableRow)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               10
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
-              <styled.span
+            <WithStyles(TableCell)
+              padding="none"
+            >
+              <styled.button
+                disabled={false}
                 onClick={[Function]}
               >
                 sample2
-              </styled.span>
+              </styled.button>
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               30
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               40
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               50
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               60
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               70
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               +80
             </WithStyles(TableCell)>
-            <WithStyles(TableCell)>
+            <WithStyles(TableCell)
+              padding="none"
+            >
               90
             </WithStyles(TableCell)>
           </WithStyles(TableRow)>
@@ -219,7 +275,9 @@ ShallowWrapper {
             component="thead"
           >
             <WithStyles(TableRow)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -228,7 +286,9 @@ ShallowWrapper {
                   Position
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -237,7 +297,9 @@ ShallowWrapper {
                   Team name
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -246,7 +308,9 @@ ShallowWrapper {
                   Played
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -255,7 +319,9 @@ ShallowWrapper {
                   Won
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -264,7 +330,9 @@ ShallowWrapper {
                   Drawn
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -273,7 +341,9 @@ ShallowWrapper {
                   Lost
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -282,7 +352,9 @@ ShallowWrapper {
                   Goal
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -291,7 +363,9 @@ ShallowWrapper {
                   Difference
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -306,68 +380,106 @@ ShallowWrapper {
             component="tbody"
           >
             <WithStyles(TableRow)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 1
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
-                <styled.span
+              <WithStyles(TableCell)
+                padding="none"
+              >
+                <styled.button
+                  disabled={false}
                   onClick={[Function]}
                 >
                   sample
-                </styled.span>
+                </styled.button>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 3
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 4
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 5
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 6
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 7
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 +8
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 9
               </WithStyles(TableCell)>
             </WithStyles(TableRow)>
             <WithStyles(TableRow)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 10
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
-                <styled.span
+              <WithStyles(TableCell)
+                padding="none"
+              >
+                <styled.button
+                  disabled={false}
                   onClick={[Function]}
                 >
                   sample2
-                </styled.span>
+                </styled.button>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 30
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 40
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 50
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 60
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 70
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 +80
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 90
               </WithStyles(TableCell)>
             </WithStyles(TableRow)>
@@ -382,7 +494,9 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <WithStyles(TableRow)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -391,7 +505,9 @@ ShallowWrapper {
                   Position
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -400,7 +516,9 @@ ShallowWrapper {
                   Team name
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -409,7 +527,9 @@ ShallowWrapper {
                   Played
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -418,7 +538,9 @@ ShallowWrapper {
                   Won
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -427,7 +549,9 @@ ShallowWrapper {
                   Drawn
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -436,7 +560,9 @@ ShallowWrapper {
                   Lost
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -445,7 +571,9 @@ ShallowWrapper {
                   Goal
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -454,7 +582,9 @@ ShallowWrapper {
                   Difference
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -473,7 +603,9 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -482,7 +614,9 @@ ShallowWrapper {
                     Position
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>,
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -491,7 +625,9 @@ ShallowWrapper {
                     Team name
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>,
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -500,7 +636,9 @@ ShallowWrapper {
                     Played
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>,
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -509,7 +647,9 @@ ShallowWrapper {
                     Won
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>,
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -518,7 +658,9 @@ ShallowWrapper {
                     Drawn
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>,
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -527,7 +669,9 @@ ShallowWrapper {
                     Lost
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>,
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -536,7 +680,9 @@ ShallowWrapper {
                     Goal
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>,
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -545,7 +691,9 @@ ShallowWrapper {
                     Difference
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>,
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -570,6 +718,7 @@ ShallowWrapper {
                   >
                     Position
                   </WithStyles(TableSortLabel)>,
+                  "padding": "none",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -600,6 +749,7 @@ ShallowWrapper {
                   >
                     Team name
                   </WithStyles(TableSortLabel)>,
+                  "padding": "none",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -630,6 +780,7 @@ ShallowWrapper {
                   >
                     Played
                   </WithStyles(TableSortLabel)>,
+                  "padding": "none",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -660,6 +811,7 @@ ShallowWrapper {
                   >
                     Won
                   </WithStyles(TableSortLabel)>,
+                  "padding": "none",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -690,6 +842,7 @@ ShallowWrapper {
                   >
                     Drawn
                   </WithStyles(TableSortLabel)>,
+                  "padding": "none",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -720,6 +873,7 @@ ShallowWrapper {
                   >
                     Lost
                   </WithStyles(TableSortLabel)>,
+                  "padding": "none",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -750,6 +904,7 @@ ShallowWrapper {
                   >
                     Goal
                   </WithStyles(TableSortLabel)>,
+                  "padding": "none",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -780,6 +935,7 @@ ShallowWrapper {
                   >
                     Difference
                   </WithStyles(TableSortLabel)>,
+                  "padding": "none",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -810,6 +966,7 @@ ShallowWrapper {
                   >
                     Points
                   </WithStyles(TableSortLabel)>,
+                  "padding": "none",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -840,68 +997,106 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <WithStyles(TableRow)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   1
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
-                  <styled.span
+                <WithStyles(TableCell)
+                  padding="none"
+                >
+                  <styled.button
+                    disabled={false}
                     onClick={[Function]}
                   >
                     sample
-                  </styled.span>
+                  </styled.button>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   3
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   4
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   5
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   6
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   7
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   +8
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   9
                 </WithStyles(TableCell)>
               </WithStyles(TableRow)>,
               <WithStyles(TableRow)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   10
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
-                  <styled.span
+                <WithStyles(TableCell)
+                  padding="none"
+                >
+                  <styled.button
+                    disabled={false}
                     onClick={[Function]}
                   >
                     sample2
-                  </styled.span>
+                  </styled.button>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   30
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   40
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   50
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   60
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   70
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   +80
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   90
                 </WithStyles(TableCell)>
               </WithStyles(TableRow)>,
@@ -916,35 +1111,54 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": Array [
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     1
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
-                    <styled.span
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
+                    <styled.button
+                      disabled={false}
                       onClick={[Function]}
                     >
                       sample
-                    </styled.span>
+                    </styled.button>
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     3
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     4
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     5
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     6
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     7
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     +8
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     9
                   </WithStyles(TableCell)>,
                 ],
@@ -957,6 +1171,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 1,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 1,
@@ -967,11 +1182,13 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": <styled.span
+                    "children": <styled.button
+                      disabled={false}
                       onClick={[Function]}
                     >
                       sample
-                    </styled.span>,
+                    </styled.button>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -980,6 +1197,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": "sample",
+                      "disabled": false,
                       "onClick": [Function],
                     },
                     "ref": null,
@@ -994,6 +1212,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 3,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 3,
@@ -1005,6 +1224,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 4,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 4,
@@ -1016,6 +1236,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 5,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 5,
@@ -1027,6 +1248,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 6,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 6,
@@ -1038,6 +1260,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 7,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 7,
@@ -1049,6 +1272,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": "+8",
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": "+8",
@@ -1060,6 +1284,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 9,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 9,
@@ -1074,35 +1299,54 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": Array [
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     10
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
-                    <styled.span
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
+                    <styled.button
+                      disabled={false}
                       onClick={[Function]}
                     >
                       sample2
-                    </styled.span>
+                    </styled.button>
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     30
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     40
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     50
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     60
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     70
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     +80
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     90
                   </WithStyles(TableCell)>,
                 ],
@@ -1115,6 +1359,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 10,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 10,
@@ -1125,11 +1370,13 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": <styled.span
+                    "children": <styled.button
+                      disabled={false}
                       onClick={[Function]}
                     >
                       sample2
-                    </styled.span>,
+                    </styled.button>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1138,6 +1385,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": "sample2",
+                      "disabled": false,
                       "onClick": [Function],
                     },
                     "ref": null,
@@ -1152,6 +1400,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 30,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 30,
@@ -1163,6 +1412,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 40,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 40,
@@ -1174,6 +1424,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 50,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 50,
@@ -1185,6 +1436,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 60,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 60,
@@ -1196,6 +1448,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 70,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 70,
@@ -1207,6 +1460,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": "+80",
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": "+80",
@@ -1218,6 +1472,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": 90,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": 90,
@@ -1245,7 +1500,9 @@ ShallowWrapper {
             component="thead"
           >
             <WithStyles(TableRow)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -1254,7 +1511,9 @@ ShallowWrapper {
                   Position
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -1263,7 +1522,9 @@ ShallowWrapper {
                   Team name
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -1272,7 +1533,9 @@ ShallowWrapper {
                   Played
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -1281,7 +1544,9 @@ ShallowWrapper {
                   Won
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -1290,7 +1555,9 @@ ShallowWrapper {
                   Drawn
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -1299,7 +1566,9 @@ ShallowWrapper {
                   Lost
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -1308,7 +1577,9 @@ ShallowWrapper {
                   Goal
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -1317,7 +1588,9 @@ ShallowWrapper {
                   Difference
                 </WithStyles(TableSortLabel)>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 <WithStyles(TableSortLabel)
                   active={true}
                   direction="asc"
@@ -1332,68 +1605,106 @@ ShallowWrapper {
             component="tbody"
           >
             <WithStyles(TableRow)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 1
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
-                <styled.span
+              <WithStyles(TableCell)
+                padding="none"
+              >
+                <styled.button
+                  disabled={false}
                   onClick={[Function]}
                 >
                   sample
-                </styled.span>
+                </styled.button>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 3
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 4
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 5
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 6
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 7
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 +8
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 9
               </WithStyles(TableCell)>
             </WithStyles(TableRow)>
             <WithStyles(TableRow)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 10
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
-                <styled.span
+              <WithStyles(TableCell)
+                padding="none"
+              >
+                <styled.button
+                  disabled={false}
                   onClick={[Function]}
                 >
                   sample2
-                </styled.span>
+                </styled.button>
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 30
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 40
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 50
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 60
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 70
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 +80
               </WithStyles(TableCell)>
-              <WithStyles(TableCell)>
+              <WithStyles(TableCell)
+                padding="none"
+              >
                 90
               </WithStyles(TableCell)>
             </WithStyles(TableRow)>
@@ -1411,7 +1722,9 @@ ShallowWrapper {
               component="thead"
             >
               <WithStyles(TableRow)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1420,7 +1733,9 @@ ShallowWrapper {
                     Position
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1429,7 +1744,9 @@ ShallowWrapper {
                     Team name
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1438,7 +1755,9 @@ ShallowWrapper {
                     Played
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1447,7 +1766,9 @@ ShallowWrapper {
                     Won
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1456,7 +1777,9 @@ ShallowWrapper {
                     Drawn
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1465,7 +1788,9 @@ ShallowWrapper {
                     Lost
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1474,7 +1799,9 @@ ShallowWrapper {
                     Goal
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1483,7 +1810,9 @@ ShallowWrapper {
                     Difference
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1498,68 +1827,106 @@ ShallowWrapper {
               component="tbody"
             >
               <WithStyles(TableRow)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   1
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
-                  <styled.span
+                <WithStyles(TableCell)
+                  padding="none"
+                >
+                  <styled.button
+                    disabled={false}
                     onClick={[Function]}
                   >
                     sample
-                  </styled.span>
+                  </styled.button>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   3
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   4
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   5
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   6
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   7
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   +8
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   9
                 </WithStyles(TableCell)>
               </WithStyles(TableRow)>
               <WithStyles(TableRow)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   10
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
-                  <styled.span
+                <WithStyles(TableCell)
+                  padding="none"
+                >
+                  <styled.button
+                    disabled={false}
                     onClick={[Function]}
                   >
                     sample2
-                  </styled.span>
+                  </styled.button>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   30
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   40
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   50
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   60
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   70
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   +80
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   90
                 </WithStyles(TableCell)>
               </WithStyles(TableRow)>
@@ -1574,7 +1941,9 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <WithStyles(TableRow)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1583,7 +1952,9 @@ ShallowWrapper {
                     Position
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1592,7 +1963,9 @@ ShallowWrapper {
                     Team name
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1601,7 +1974,9 @@ ShallowWrapper {
                     Played
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1610,7 +1985,9 @@ ShallowWrapper {
                     Won
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1619,7 +1996,9 @@ ShallowWrapper {
                     Drawn
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1628,7 +2007,9 @@ ShallowWrapper {
                     Lost
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1637,7 +2018,9 @@ ShallowWrapper {
                     Goal
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1646,7 +2029,9 @@ ShallowWrapper {
                     Difference
                   </WithStyles(TableSortLabel)>
                 </WithStyles(TableCell)>
-                <WithStyles(TableCell)>
+                <WithStyles(TableCell)
+                  padding="none"
+                >
                   <WithStyles(TableSortLabel)
                     active={true}
                     direction="asc"
@@ -1665,7 +2050,9 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": Array [
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     <WithStyles(TableSortLabel)
                       active={true}
                       direction="asc"
@@ -1674,7 +2061,9 @@ ShallowWrapper {
                       Position
                     </WithStyles(TableSortLabel)>
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     <WithStyles(TableSortLabel)
                       active={true}
                       direction="asc"
@@ -1683,7 +2072,9 @@ ShallowWrapper {
                       Team name
                     </WithStyles(TableSortLabel)>
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     <WithStyles(TableSortLabel)
                       active={true}
                       direction="asc"
@@ -1692,7 +2083,9 @@ ShallowWrapper {
                       Played
                     </WithStyles(TableSortLabel)>
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     <WithStyles(TableSortLabel)
                       active={true}
                       direction="asc"
@@ -1701,7 +2094,9 @@ ShallowWrapper {
                       Won
                     </WithStyles(TableSortLabel)>
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     <WithStyles(TableSortLabel)
                       active={true}
                       direction="asc"
@@ -1710,7 +2105,9 @@ ShallowWrapper {
                       Drawn
                     </WithStyles(TableSortLabel)>
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     <WithStyles(TableSortLabel)
                       active={true}
                       direction="asc"
@@ -1719,7 +2116,9 @@ ShallowWrapper {
                       Lost
                     </WithStyles(TableSortLabel)>
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     <WithStyles(TableSortLabel)
                       active={true}
                       direction="asc"
@@ -1728,7 +2127,9 @@ ShallowWrapper {
                       Goal
                     </WithStyles(TableSortLabel)>
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     <WithStyles(TableSortLabel)
                       active={true}
                       direction="asc"
@@ -1737,7 +2138,9 @@ ShallowWrapper {
                       Difference
                     </WithStyles(TableSortLabel)>
                   </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     <WithStyles(TableSortLabel)
                       active={true}
                       direction="asc"
@@ -1762,6 +2165,7 @@ ShallowWrapper {
                     >
                       Position
                     </WithStyles(TableSortLabel)>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1792,6 +2196,7 @@ ShallowWrapper {
                     >
                       Team name
                     </WithStyles(TableSortLabel)>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1822,6 +2227,7 @@ ShallowWrapper {
                     >
                       Played
                     </WithStyles(TableSortLabel)>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1852,6 +2258,7 @@ ShallowWrapper {
                     >
                       Won
                     </WithStyles(TableSortLabel)>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1882,6 +2289,7 @@ ShallowWrapper {
                     >
                       Drawn
                     </WithStyles(TableSortLabel)>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1912,6 +2320,7 @@ ShallowWrapper {
                     >
                       Lost
                     </WithStyles(TableSortLabel)>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1942,6 +2351,7 @@ ShallowWrapper {
                     >
                       Goal
                     </WithStyles(TableSortLabel)>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1972,6 +2382,7 @@ ShallowWrapper {
                     >
                       Difference
                     </WithStyles(TableSortLabel)>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -2002,6 +2413,7 @@ ShallowWrapper {
                     >
                       Points
                     </WithStyles(TableSortLabel)>,
+                    "padding": "none",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -2032,68 +2444,106 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <WithStyles(TableRow)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     1
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
-                    <styled.span
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
+                    <styled.button
+                      disabled={false}
                       onClick={[Function]}
                     >
                       sample
-                    </styled.span>
+                    </styled.button>
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     3
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     4
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     5
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     6
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     7
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     +8
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     9
                   </WithStyles(TableCell)>
                 </WithStyles(TableRow)>,
                 <WithStyles(TableRow)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     10
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
-                    <styled.span
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
+                    <styled.button
+                      disabled={false}
                       onClick={[Function]}
                     >
                       sample2
-                    </styled.span>
+                    </styled.button>
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     30
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     40
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     50
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     60
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     70
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     +80
                   </WithStyles(TableCell)>
-                  <WithStyles(TableCell)>
+                  <WithStyles(TableCell)
+                    padding="none"
+                  >
                     90
                   </WithStyles(TableCell)>
                 </WithStyles(TableRow)>,
@@ -2108,35 +2558,54 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": Array [
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       1
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
-                      <styled.span
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
+                      <styled.button
+                        disabled={false}
                         onClick={[Function]}
                       >
                         sample
-                      </styled.span>
+                      </styled.button>
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       3
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       4
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       5
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       6
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       7
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       +8
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       9
                     </WithStyles(TableCell)>,
                   ],
@@ -2149,6 +2618,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 1,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 1,
@@ -2159,11 +2629,13 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": <styled.span
+                      "children": <styled.button
+                        disabled={false}
                         onClick={[Function]}
                       >
                         sample
-                      </styled.span>,
+                      </styled.button>,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": Object {
@@ -2172,6 +2644,7 @@ ShallowWrapper {
                       "nodeType": "class",
                       "props": Object {
                         "children": "sample",
+                        "disabled": false,
                         "onClick": [Function],
                       },
                       "ref": null,
@@ -2186,6 +2659,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 3,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 3,
@@ -2197,6 +2671,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 4,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 4,
@@ -2208,6 +2683,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 5,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 5,
@@ -2219,6 +2695,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 6,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 6,
@@ -2230,6 +2707,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 7,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 7,
@@ -2241,6 +2719,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": "+8",
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": "+8",
@@ -2252,6 +2731,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 9,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 9,
@@ -2266,35 +2746,54 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": Array [
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       10
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
-                      <styled.span
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
+                      <styled.button
+                        disabled={false}
                         onClick={[Function]}
                       >
                         sample2
-                      </styled.span>
+                      </styled.button>
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       30
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       40
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       50
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       60
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       70
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       +80
                     </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)>
+                    <WithStyles(TableCell)
+                      padding="none"
+                    >
                       90
                     </WithStyles(TableCell)>,
                   ],
@@ -2307,6 +2806,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 10,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 10,
@@ -2317,11 +2817,13 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": <styled.span
+                      "children": <styled.button
+                        disabled={false}
                         onClick={[Function]}
                       >
                         sample2
-                      </styled.span>,
+                      </styled.button>,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": Object {
@@ -2330,6 +2832,7 @@ ShallowWrapper {
                       "nodeType": "class",
                       "props": Object {
                         "children": "sample2",
+                        "disabled": false,
                         "onClick": [Function],
                       },
                       "ref": null,
@@ -2344,6 +2847,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 30,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 30,
@@ -2355,6 +2859,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 40,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 40,
@@ -2366,6 +2871,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 50,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 50,
@@ -2377,6 +2883,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 60,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 60,
@@ -2388,6 +2895,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 70,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 70,
@@ -2399,6 +2907,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": "+80",
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": "+80",
@@ -2410,6 +2919,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": 90,
+                      "padding": "none",
                     },
                     "ref": null,
                     "rendered": 90,

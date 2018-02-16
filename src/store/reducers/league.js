@@ -1,10 +1,17 @@
 import {
   FETCH_STANDINGS_FULFILLED,
   FETCH_LEAGUE_FULFILLED,
+  FETCH_LEAGUES_FULFILLED,
   FETCH_SEASON_FULFILLED,
 } from '../actions/types'
 
-const INITIAL_STATE = { details: {}, standings: [], season: {} }
+const INITIAL_STATE = {
+  teste: {},
+  list: [],
+  details: {},
+  standings: [],
+  season: {},
+}
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
@@ -12,6 +19,12 @@ export default (state = INITIAL_STATE, action) => {
       return {
         ...state,
         standings: action.payload,
+      }
+
+    case FETCH_LEAGUES_FULFILLED:
+      return {
+        ...state,
+        list: action.payload.data,
       }
 
     case FETCH_LEAGUE_FULFILLED:

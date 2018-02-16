@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Standing from '../Standing/Standing'
 import actions from '../../store/actions'
 import TeamDialog from '../Team/Team'
+import SearchLeague from '../SearchLeague/SearchLeague'
 
 const Title = styled.h1`
   text-align: center;
@@ -12,19 +13,8 @@ const Title = styled.h1`
 
 class League extends Component {
   static propTypes = {
-    getLeague: PropTypes.func.isRequired,
     getStandings: PropTypes.func.isRequired,
-    getSeason: PropTypes.func.isRequired,
     getTeam: PropTypes.func.isRequired,
-    league: PropTypes.shape({
-      id: PropTypes.number,
-      name: PropTypes.string,
-      currentSeasonId: PropTypes.number,
-    }).isRequired,
-    season: PropTypes.shape({
-      id: PropTypes.number,
-      name: PropTypes.string,
-    }).isRequired,
     team: PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string,
@@ -51,17 +41,8 @@ class League extends Component {
 
   state = {
     queryTeam: false,
-  }
-
-  componentDidMount() {
-    this.fetchData(501)
-  }
-
-  fetchData = (id) => {
-    this.props.getLeague(id).then((res) => {
-      this.props.getStandings(res.value.currentSeasonId)
-      this.props.getSeason(res.value.currentSeasonId)
-    })
+    league: {},
+    season: {},
   }
 
   queryTeam = id => this.props.getTeam(id).then(() => {
@@ -76,8 +57,16 @@ class League extends Component {
     })
   }
 
+  queryStanding = (league, season) => {
+    this.setState({
+      league,
+      season,
+    })
+    this.props.getStandings(season.id)
+  }
+
   render() {
-    const { league, season } = this.props
+    const { league, season } = this.state
     return (
       <div>
         {league.name && season.name && <Title>{league.name} - {season.name}</Title>}
@@ -87,6 +76,7 @@ class League extends Component {
           squad={this.props.squad}
           onClose={this.handleTeamDailogClose}
         />
+        <SearchLeague queryStanding={this.queryStanding} />
         <Standing
           standings={this.props.standings}
           onTeamSelect={this.queryTeam}
@@ -97,8 +87,6 @@ class League extends Component {
 }
 
 const mapStateToProps = ({ league, team }) => ({
-  league: league.details,
-  season: league.season,
   team: team.details,
   squad: team.squad,
   standings: league.standings.map((item, index) => ({
@@ -116,9 +104,7 @@ const mapStateToProps = ({ league, team }) => ({
 })
 
 export default connect(mapStateToProps, {
-  getLeague: actions.getLeague,
   getStandings: actions.getStandings,
-  getSeason: actions.getSeason,
   getTeam: actions.getTeam,
 })(League)
 
