@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home component mapStateToProps function must return the data related to the league, season, team, squad and standings 1`] = `
+exports[`Home component mapStateToProps function must return the data related to the season, team, squad and standings 1`] = `
 Object {
-  "league": Object {},
-  "season": Object {},
   "squad": Array [],
   "standings": Array [
     Object {
@@ -108,11 +106,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <styled.h1>
-          sample
-           - 
-          sample
-        </styled.h1>,
+        undefined,
         <Connect(WithTheme(WithWidth(WithMobileDialog)))
           onClose={[Function]}
           open={false}
@@ -137,6 +131,9 @@ ShallowWrapper {
               "name": "sample",
             }
           }
+        />,
+        <Connect(SearchLeague)
+          queryStanding={[Function]}
         />,
         <Standing
           onTeamSelect={[Function]}
@@ -173,25 +170,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            "sample",
-            " - ",
-            "sample",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "sample",
-          " - ",
-          "sample",
-        ],
-        "type": [Function],
-      },
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
@@ -216,6 +195,17 @@ ShallowWrapper {
             "logo": "logo",
             "name": "sample",
           },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "queryStanding": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -268,11 +258,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <styled.h1>
-            sample
-             - 
-            sample
-          </styled.h1>,
+          undefined,
           <Connect(WithTheme(WithWidth(WithMobileDialog)))
             onClose={[Function]}
             open={false}
@@ -297,6 +283,9 @@ ShallowWrapper {
                 "name": "sample",
               }
             }
+          />,
+          <Connect(SearchLeague)
+            queryStanding={[Function]}
           />,
           <Standing
             onTeamSelect={[Function]}
@@ -333,25 +322,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              "sample",
-              " - ",
-              "sample",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "sample",
-            " - ",
-            "sample",
-          ],
-          "type": [Function],
-        },
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
@@ -376,6 +347,17 @@ ShallowWrapper {
               "logo": "logo",
               "name": "sample",
             },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "queryStanding": [Function],
           },
           "ref": null,
           "rendered": null,

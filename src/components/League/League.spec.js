@@ -92,7 +92,7 @@ describe('Home component', () => {
   })
 
   describe('mapStateToProps function', () => {
-    it('must return the data related to the league, season, team, squad and standings', () => {
+    it('must return the data related to the season, team, squad and standings', () => {
       const state = {
         league: {
           details: {},
@@ -111,8 +111,6 @@ describe('Home component', () => {
         },
       }
       const result = mapStateToProps(state)
-      expect(result).toHaveProperty('league')
-      expect(result).toHaveProperty('season')
       expect(result).toHaveProperty('team')
       expect(result).toHaveProperty('squad')
       expect(result).toHaveProperty('standings')

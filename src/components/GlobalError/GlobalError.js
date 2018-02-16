@@ -18,6 +18,11 @@ GlobalError.propTypes = {
     code: PropTypes.number.isRequired,
     message: PropTypes.string.isRequired,
   })).isRequired,
+  dismissError: PropTypes.func,
+}
+
+GlobalError.defaultProps = {
+  dismissError: () => {},
 }
 
 const mapStateToProps = ({ api }) => ({

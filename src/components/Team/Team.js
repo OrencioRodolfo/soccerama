@@ -130,7 +130,7 @@ class TeamDialog extends Component {
       if (this.props.squad.length) {
         return this.props.squad.map((squadMember) => {
           const player = this.props.players[squadMember.player_id]
-  
+
           return (
             player &&
             <Player key={player.id}>

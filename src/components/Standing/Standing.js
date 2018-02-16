@@ -48,12 +48,15 @@ class Standing extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    return !this.isArrayEqual(nextProps.standings, this.props.standings)
+    const result = (nextProps.standings.length !== this.props.standings.length)
+    || (!this.isArrayEqual(nextProps.standings, this.props.standings))
     || (
       nextState.order !== this.state.order ||
       nextState.orderBy !== this.state.orderBy ||
       nextState.pendingRequest !== this.state.pendingRequest
     )
+
+    return result
   }
 
   isArrayEqual = (x, y) => _(x).differenceWith(y, _.isEqual).isEmpty()

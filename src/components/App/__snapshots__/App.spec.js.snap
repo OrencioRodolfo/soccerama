@@ -28,7 +28,13 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <div>
+      "children": <div
+        style={
+          Object {
+            "height": "100%",
+          }
+        }
+      >
         <Connect(Loader) />
         <Connect(GlobalError) />
         <Home />
@@ -53,6 +59,9 @@ ShallowWrapper {
           <Connect(GlobalError) />,
           <Home />,
         ],
+        "style": Object {
+          "height": "100%",
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -94,7 +103,13 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <div>
+        "children": <div
+          style={
+            Object {
+              "height": "100%",
+            }
+          }
+        >
           <Connect(Loader) />
           <Connect(GlobalError) />
           <Home />
@@ -119,6 +134,9 @@ ShallowWrapper {
             <Connect(GlobalError) />,
             <Home />,
           ],
+          "style": Object {
+            "height": "100%",
+          },
         },
         "ref": null,
         "rendered": Array [

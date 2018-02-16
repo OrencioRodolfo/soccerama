@@ -1,9 +1,15 @@
 import {
   FETCH_LEAGUE,
+  FETCH_LEAGUES,
   FETCH_STANDINGS,
   FETCH_SEASON,
 } from './types'
 import request from '../../services/request'
+
+export const getLeagues = () => ({
+  type: FETCH_LEAGUES,
+  payload: request('leagues?include=seasons'),
+})
 
 export const getLeague = id => ({
   type: FETCH_LEAGUE,
@@ -17,7 +23,7 @@ export const getLeague = id => ({
 export const getStandings = id => ({
   type: FETCH_STANDINGS,
   payload: request(`standings/season/${id}`).then(res =>
-    res.data[0].standings.data),
+    (res.data.length ? res.data[0].standings.data : [])),
 })
 
 export const getSeason = id => ({

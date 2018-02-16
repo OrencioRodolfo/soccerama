@@ -3,19 +3,37 @@
 exports[`Home component fetch squad must render the entire squad 1`] = `
 Array [
   <styled.div>
-    <img
-      alt="player"
-      src="Sample"
-    />
-    <div
-      style={
-        Object {
-          "textAlign": "center",
-        }
-      }
-    >
-      Sample
-    </div>
+    <Card>
+      <Header>
+        <styled.div>
+          <img
+            alt="player"
+            src="Sample"
+          />
+          <b>
+            Sample
+          </b>
+        </styled.div>
+      </Header>
+      <Content>
+        <styled.ul>
+          <styled.li>
+            <b>
+              Weight:
+            </b>
+             
+            Sample
+          </styled.li>
+          <styled.li>
+            <b>
+              Height:
+            </b>
+             
+            Sample
+          </styled.li>
+        </styled.ul>
+      </Content>
+    </Card>
   </styled.div>,
   undefined,
 ]
@@ -84,17 +102,29 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <WithStyles(Dialog)
-        aria-labelledby="responsive-dialog-title"
+        aria-labelledby="Team squad"
         fullScreen={false}
+        fullWidth={true}
+        maxWidth="md"
         onClose={[Function]}
         onEnter={[Function]}
         open={false}
       >
-        <WithStyles(DialogTitle) />
+        <WithStyles(DialogTitle)
+          disableTypography={true}
+          style={
+            Object {
+              "background": "#009688",
+              "color": "rgba(255, 255, 255, 0.87)",
+            }
+          }
+        >
+          <styled.h2 />
+        </WithStyles(DialogTitle)>
         <WithStyles(DialogContent)
           style={
             Object {
-              "minWidth": "400px",
+              "padding": "15px",
             }
           }
         >
@@ -125,13 +155,23 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "aria-labelledby": "responsive-dialog-title",
+        "aria-labelledby": "Team squad",
         "children": Array [
-          <WithStyles(DialogTitle) />,
+          <WithStyles(DialogTitle)
+            disableTypography={true}
+            style={
+              Object {
+                "background": "#009688",
+                "color": "rgba(255, 255, 255, 0.87)",
+              }
+            }
+          >
+            <styled.h2 />
+          </WithStyles(DialogTitle)>,
           <WithStyles(DialogContent)
             style={
               Object {
-                "minWidth": "400px",
+                "padding": "15px",
               }
             }
           >
@@ -156,6 +196,8 @@ ShallowWrapper {
           </WithStyles(DialogActions)>,
         ],
         "fullScreen": false,
+        "fullWidth": true,
+        "maxWidth": "md",
         "onClose": [Function],
         "onEnter": [Function],
         "open": false,
@@ -167,10 +209,25 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": undefined,
+            "children": <styled.h2 />,
+            "disableTypography": true,
+            "style": Object {
+              "background": "#009688",
+              "color": "rgba(255, 255, 255, 0.87)",
+            },
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         Object {
@@ -190,7 +247,7 @@ ShallowWrapper {
               </styled.div>,
             ],
             "style": Object {
-              "minWidth": "400px",
+              "padding": "15px",
             },
           },
           "ref": null,
@@ -284,17 +341,29 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <WithStyles(Dialog)
-          aria-labelledby="responsive-dialog-title"
+          aria-labelledby="Team squad"
           fullScreen={false}
+          fullWidth={true}
+          maxWidth="md"
           onClose={[Function]}
           onEnter={[Function]}
           open={false}
         >
-          <WithStyles(DialogTitle) />
+          <WithStyles(DialogTitle)
+            disableTypography={true}
+            style={
+              Object {
+                "background": "#009688",
+                "color": "rgba(255, 255, 255, 0.87)",
+              }
+            }
+          >
+            <styled.h2 />
+          </WithStyles(DialogTitle)>
           <WithStyles(DialogContent)
             style={
               Object {
-                "minWidth": "400px",
+                "padding": "15px",
               }
             }
           >
@@ -325,13 +394,23 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "aria-labelledby": "responsive-dialog-title",
+          "aria-labelledby": "Team squad",
           "children": Array [
-            <WithStyles(DialogTitle) />,
+            <WithStyles(DialogTitle)
+              disableTypography={true}
+              style={
+                Object {
+                  "background": "#009688",
+                  "color": "rgba(255, 255, 255, 0.87)",
+                }
+              }
+            >
+              <styled.h2 />
+            </WithStyles(DialogTitle)>,
             <WithStyles(DialogContent)
               style={
                 Object {
-                  "minWidth": "400px",
+                  "padding": "15px",
                 }
               }
             >
@@ -356,6 +435,8 @@ ShallowWrapper {
             </WithStyles(DialogActions)>,
           ],
           "fullScreen": false,
+          "fullWidth": true,
+          "maxWidth": "md",
           "onClose": [Function],
           "onEnter": [Function],
           "open": false,
@@ -367,10 +448,25 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": undefined,
+              "children": <styled.h2 />,
+              "disableTypography": true,
+              "style": Object {
+                "background": "#009688",
+                "color": "rgba(255, 255, 255, 0.87)",
+              },
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             "type": [Function],
           },
           Object {
@@ -390,7 +486,7 @@ ShallowWrapper {
                 </styled.div>,
               ],
               "style": Object {
-                "minWidth": "400px",
+                "padding": "15px",
               },
             },
             "ref": null,
@@ -493,19 +589,37 @@ exports[`Home component render squad must render a circular progress while the s
 exports[`Home component render squad must render the entire squad 1`] = `
 Array [
   <styled.div>
-    <img
-      alt="player"
-      src="Sample"
-    />
-    <div
-      style={
-        Object {
-          "textAlign": "center",
-        }
-      }
-    >
-      Sample
-    </div>
+    <Card>
+      <Header>
+        <styled.div>
+          <img
+            alt="player"
+            src="Sample"
+          />
+          <b>
+            Sample
+          </b>
+        </styled.div>
+      </Header>
+      <Content>
+        <styled.ul>
+          <styled.li>
+            <b>
+              Weight:
+            </b>
+             
+            Sample
+          </styled.li>
+          <styled.li>
+            <b>
+              Height:
+            </b>
+             
+            Sample
+          </styled.li>
+        </styled.ul>
+      </Content>
+    </Card>
   </styled.div>,
   undefined,
 ]
