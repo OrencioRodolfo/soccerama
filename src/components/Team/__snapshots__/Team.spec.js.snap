@@ -2,7 +2,9 @@
 
 exports[`Home component fetch squad must render the entire squad 1`] = `
 Array [
-  <styled.div>
+  <styled.div
+    className="player"
+  >
     <Card>
       <Header>
         <styled.div>
@@ -588,7 +590,9 @@ exports[`Home component render squad must render a circular progress while the s
 
 exports[`Home component render squad must render the entire squad 1`] = `
 Array [
-  <styled.div>
+  <styled.div
+    className="player"
+  >
     <Card>
       <Header>
         <styled.div>

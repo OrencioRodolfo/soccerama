@@ -9,12 +9,10 @@ describe('Search league form component', () => {
   let leagues
 
   beforeEach(() => {
-    getLeagues = jest.fn()
-    queryStanding = jest.fn()
     leagues = [{
       id: 1,
       name: 'sample',
-      currentSeasonId: 1,
+      current_season_id: 1,
       seasons: {
         data: [{
           id: 2,
@@ -22,6 +20,16 @@ describe('Search league form component', () => {
         }],
       },
     }]
+    getLeagues = () => Promise.resolve({
+      value: {
+        data: [{
+          id: 1,
+          name: 'sample',
+          current_season_id: 1,
+        }],
+      },
+    })
+    queryStanding = jest.fn()
     component = shallow(<DSearchLeague
       getLeagues={getLeagues}
       leagues={leagues}
@@ -42,7 +50,7 @@ describe('Search league form component', () => {
     it('must add the selected league ID to the state and reset the season', () => {
       instance.handleLeagueChange({ target: { value: 1 } })
       expect(instance.state.league).toEqual(1)
-      expect(instance.state.season).toEqual(-1)
+      expect(instance.state.season).toEqual(1)
     })
 
     it('must add the selected season ID to the state and call queryStanding()', () => {
@@ -63,7 +71,6 @@ describe('Search league form component', () => {
       }
       const result = mapStateToProps(state)
       expect(result).toEqual({
-        league: {},
         leagues: [],
       })
     })
