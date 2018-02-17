@@ -90,7 +90,7 @@ class Standing extends Component {
       pendingRequest: true,
     })
 
-    this.props.onTeamSelect(id).then(() => {
+    this.props.onTeamSelect(id).catch(() => {}).then(() => {
       this.setState({
         pendingRequest: false,
       })
