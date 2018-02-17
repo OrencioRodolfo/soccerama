@@ -15,7 +15,7 @@ const GlobalError = ({ errors, dismissError }) => errors.map((error, index) => (
 
 GlobalError.propTypes = {
   errors: PropTypes.arrayOf(PropTypes.shape({
-    code: PropTypes.number.isRequired,
+    code: PropTypes.number,
     message: PropTypes.string.isRequired,
   })).isRequired,
   dismissError: PropTypes.func,

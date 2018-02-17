@@ -42,21 +42,14 @@ class Standing extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({
-      list: nextProps.standings,
-    })
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    const result = (nextProps.standings.length !== this.props.standings.length)
-    || (!this.isArrayEqual(nextProps.standings, this.props.standings))
-    || (
-      nextState.order !== this.state.order ||
-      nextState.orderBy !== this.state.orderBy ||
-      nextState.pendingRequest !== this.state.pendingRequest
-    )
-
-    return result
+    if (
+      nextProps.standings.length !== this.state.list.length
+      || !this.isArrayEqual(nextProps.standings, this.state.list)
+    ) {
+      this.setState({
+        list: nextProps.standings,
+      })
+    }
   }
 
   isArrayEqual = (x, y) => _(x).differenceWith(y, _.isEqual).isEmpty()
@@ -128,8 +121,8 @@ class Standing extends Component {
   }
 
   renderStandingList() {
-    if (this.props.standings && this.props.standings.length) {
-      return this.props.standings.map(item => (
+    if (this.state.list && this.state.list.length) {
+      return this.state.list.map(item => (
         <TableRow key={item.id}>
           <TableCell padding="none">{item.position}</TableCell>
           <TableCell padding="none">

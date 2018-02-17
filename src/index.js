@@ -41,9 +41,5 @@ if (module.hot) {
     return
   }
 
-  window.navigator.serviceWorker.register('./../sw.js').then((registration) => {
-    console.log('Registration worked!', registration.scope)
-  }).catch((e) => {
-    console.log('Service Woker registration failed!', e)
-  })
+  window.navigator.serviceWorker.register('./../sw.js')
 })()

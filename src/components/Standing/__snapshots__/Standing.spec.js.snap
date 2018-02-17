@@ -159,106 +159,14 @@ ShallowWrapper {
         >
           <WithStyles(TableRow)>
             <WithStyles(TableCell)
-              padding="none"
+              colSpan="9"
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
             >
-              1
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              <styled.button
-                disabled={false}
-                onClick={[Function]}
-              >
-                sample
-              </styled.button>
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              3
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              4
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              5
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              6
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              7
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              +8
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              9
-            </WithStyles(TableCell)>
-          </WithStyles(TableRow)>
-          <WithStyles(TableRow)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              10
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              <styled.button
-                disabled={false}
-                onClick={[Function]}
-              >
-                sample2
-              </styled.button>
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              30
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              40
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              50
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              60
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              70
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              +80
-            </WithStyles(TableCell)>
-            <WithStyles(TableCell)
-              padding="none"
-            >
-              90
+              No results
             </WithStyles(TableCell)>
           </WithStyles(TableRow)>
         </TableBody>
@@ -381,106 +289,14 @@ ShallowWrapper {
           >
             <WithStyles(TableRow)>
               <WithStyles(TableCell)
-                padding="none"
+                colSpan="9"
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
               >
-                1
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                <styled.button
-                  disabled={false}
-                  onClick={[Function]}
-                >
-                  sample
-                </styled.button>
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                3
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                4
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                5
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                6
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                7
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                +8
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                9
-              </WithStyles(TableCell)>
-            </WithStyles(TableRow)>
-            <WithStyles(TableRow)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                10
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                <styled.button
-                  disabled={false}
-                  onClick={[Function]}
-                >
-                  sample2
-                </styled.button>
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                30
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                40
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                50
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                60
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                70
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                +80
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                90
+                No results
               </WithStyles(TableCell)>
             </WithStyles(TableRow)>
           </TableBody>,
@@ -995,493 +811,55 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <WithStyles(TableRow)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  1
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  <styled.button
-                    disabled={false}
-                    onClick={[Function]}
-                  >
-                    sample
-                  </styled.button>
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  3
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  4
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  5
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  6
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  7
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  +8
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  9
-                </WithStyles(TableCell)>
-              </WithStyles(TableRow)>,
-              <WithStyles(TableRow)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  10
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  <styled.button
-                    disabled={false}
-                    onClick={[Function]}
-                  >
-                    sample2
-                  </styled.button>
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  30
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  40
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  50
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  60
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  70
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  +80
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  90
-                </WithStyles(TableCell)>
-              </WithStyles(TableRow)>,
-            ],
+            "children": <WithStyles(TableRow)>
+              <WithStyles(TableCell)
+                colSpan="9"
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+              >
+                No results
+              </WithStyles(TableCell)>
+            </WithStyles(TableRow)>,
             "component": "tbody",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <WithStyles(TableCell)
+                colSpan="9"
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+              >
+                No results
+              </WithStyles(TableCell)>,
+            },
+            "ref": null,
+            "rendered": Object {
               "instance": null,
-              "key": "1",
+              "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": Array [
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    1
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    <styled.button
-                      disabled={false}
-                      onClick={[Function]}
-                    >
-                      sample
-                    </styled.button>
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    3
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    4
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    5
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    6
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    7
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    +8
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    9
-                  </WithStyles(TableCell)>,
-                ],
+                "children": "No results",
+                "colSpan": "9",
+                "style": Object {
+                  "textAlign": "center",
+                },
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 1,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 1,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.button
-                      disabled={false}
-                      onClick={[Function]}
-                    >
-                      sample
-                    </styled.button>,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "sample",
-                      "disabled": false,
-                      "onClick": [Function],
-                    },
-                    "ref": null,
-                    "rendered": "sample",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 3,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 3,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 4,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 4,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 5,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 5,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 6,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 6,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 7,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 7,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "+8",
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": "+8",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 9,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 9,
-                  "type": [Function],
-                },
-              ],
+              "rendered": "No results",
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": "10",
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    10
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    <styled.button
-                      disabled={false}
-                      onClick={[Function]}
-                    >
-                      sample2
-                    </styled.button>
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    30
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    40
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    50
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    60
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    70
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    +80
-                  </WithStyles(TableCell)>,
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    90
-                  </WithStyles(TableCell)>,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 10,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 10,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.button
-                      disabled={false}
-                      onClick={[Function]}
-                    >
-                      sample2
-                    </styled.button>,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "sample2",
-                      "disabled": false,
-                      "onClick": [Function],
-                    },
-                    "ref": null,
-                    "rendered": "sample2",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 30,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 30,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 40,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 40,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 50,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 50,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 60,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 60,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 70,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 70,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "+80",
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": "+80",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": 90,
-                    "padding": "none",
-                  },
-                  "ref": null,
-                  "rendered": 90,
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-          ],
+            "type": [Function],
+          },
           "type": [Function],
         },
       ],
@@ -1606,106 +984,14 @@ ShallowWrapper {
           >
             <WithStyles(TableRow)>
               <WithStyles(TableCell)
-                padding="none"
+                colSpan="9"
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
               >
-                1
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                <styled.button
-                  disabled={false}
-                  onClick={[Function]}
-                >
-                  sample
-                </styled.button>
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                3
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                4
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                5
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                6
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                7
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                +8
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                9
-              </WithStyles(TableCell)>
-            </WithStyles(TableRow)>
-            <WithStyles(TableRow)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                10
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                <styled.button
-                  disabled={false}
-                  onClick={[Function]}
-                >
-                  sample2
-                </styled.button>
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                30
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                40
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                50
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                60
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                70
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                +80
-              </WithStyles(TableCell)>
-              <WithStyles(TableCell)
-                padding="none"
-              >
-                90
+                No results
               </WithStyles(TableCell)>
             </WithStyles(TableRow)>
           </TableBody>
@@ -1828,106 +1114,14 @@ ShallowWrapper {
             >
               <WithStyles(TableRow)>
                 <WithStyles(TableCell)
-                  padding="none"
+                  colSpan="9"
+                  style={
+                    Object {
+                      "textAlign": "center",
+                    }
+                  }
                 >
-                  1
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  <styled.button
-                    disabled={false}
-                    onClick={[Function]}
-                  >
-                    sample
-                  </styled.button>
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  3
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  4
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  5
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  6
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  7
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  +8
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  9
-                </WithStyles(TableCell)>
-              </WithStyles(TableRow)>
-              <WithStyles(TableRow)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  10
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  <styled.button
-                    disabled={false}
-                    onClick={[Function]}
-                  >
-                    sample2
-                  </styled.button>
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  30
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  40
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  50
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  60
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  70
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  +80
-                </WithStyles(TableCell)>
-                <WithStyles(TableCell)
-                  padding="none"
-                >
-                  90
+                  No results
                 </WithStyles(TableCell)>
               </WithStyles(TableRow)>
             </TableBody>,
@@ -2442,493 +1636,55 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": Array [
-                <WithStyles(TableRow)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    1
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    <styled.button
-                      disabled={false}
-                      onClick={[Function]}
-                    >
-                      sample
-                    </styled.button>
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    3
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    4
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    5
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    6
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    7
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    +8
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    9
-                  </WithStyles(TableCell)>
-                </WithStyles(TableRow)>,
-                <WithStyles(TableRow)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    10
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    <styled.button
-                      disabled={false}
-                      onClick={[Function]}
-                    >
-                      sample2
-                    </styled.button>
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    30
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    40
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    50
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    60
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    70
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    +80
-                  </WithStyles(TableCell)>
-                  <WithStyles(TableCell)
-                    padding="none"
-                  >
-                    90
-                  </WithStyles(TableCell)>
-                </WithStyles(TableRow)>,
-              ],
+              "children": <WithStyles(TableRow)>
+                <WithStyles(TableCell)
+                  colSpan="9"
+                  style={
+                    Object {
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  No results
+                </WithStyles(TableCell)>
+              </WithStyles(TableRow)>,
               "component": "tbody",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(TableCell)
+                  colSpan="9"
+                  style={
+                    Object {
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  No results
+                </WithStyles(TableCell)>,
+              },
+              "ref": null,
+              "rendered": Object {
                 "instance": null,
-                "key": "1",
+                "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": Array [
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      1
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      <styled.button
-                        disabled={false}
-                        onClick={[Function]}
-                      >
-                        sample
-                      </styled.button>
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      3
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      4
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      5
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      6
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      7
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      +8
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      9
-                    </WithStyles(TableCell)>,
-                  ],
+                  "children": "No results",
+                  "colSpan": "9",
+                  "style": Object {
+                    "textAlign": "center",
+                  },
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 1,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 1,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <styled.button
-                        disabled={false}
-                        onClick={[Function]}
-                      >
-                        sample
-                      </styled.button>,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "sample",
-                        "disabled": false,
-                        "onClick": [Function],
-                      },
-                      "ref": null,
-                      "rendered": "sample",
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 3,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 3,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 4,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 4,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 5,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 5,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 6,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 6,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 7,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 7,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "+8",
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": "+8",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 9,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 9,
-                    "type": [Function],
-                  },
-                ],
+                "rendered": "No results",
                 "type": [Function],
               },
-              Object {
-                "instance": null,
-                "key": "10",
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      10
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      <styled.button
-                        disabled={false}
-                        onClick={[Function]}
-                      >
-                        sample2
-                      </styled.button>
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      30
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      40
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      50
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      60
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      70
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      +80
-                    </WithStyles(TableCell)>,
-                    <WithStyles(TableCell)
-                      padding="none"
-                    >
-                      90
-                    </WithStyles(TableCell)>,
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 10,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 10,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <styled.button
-                        disabled={false}
-                        onClick={[Function]}
-                      >
-                        sample2
-                      </styled.button>,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "sample2",
-                        "disabled": false,
-                        "onClick": [Function],
-                      },
-                      "ref": null,
-                      "rendered": "sample2",
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 30,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 30,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 40,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 40,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 50,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 50,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 60,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 60,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 70,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 70,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "+80",
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": "+80",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": 90,
-                      "padding": "none",
-                    },
-                    "ref": null,
-                    "rendered": 90,
-                    "type": [Function],
-                  },
-                ],
-                "type": [Function],
-              },
-            ],
+              "type": [Function],
+            },
             "type": [Function],
           },
         ],
