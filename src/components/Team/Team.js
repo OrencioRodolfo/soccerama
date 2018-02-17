@@ -133,7 +133,7 @@ class TeamDialog extends Component {
 
           return (
             player &&
-            <Player key={player.id}>
+            <Player key={player.id} className="player">
               <Card>
                 <Card.Header>
                   <HeadContent>

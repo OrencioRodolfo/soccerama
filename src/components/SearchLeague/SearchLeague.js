@@ -22,7 +22,7 @@ class SearchLeague extends Component {
     leagues: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string,
-      currentSeasonId: PropTypes.number,
+      current_season_id: PropTypes.number,
       seasons: PropTypes.shape({
         data: PropTypes.arrayOf(PropTypes.shape({
           id: PropTypes.number,
@@ -42,7 +42,17 @@ class SearchLeague extends Component {
   }
 
   componentDidMount() {
-    this.props.getLeagues()
+    this.props.getLeagues().then((leagues) => {
+      if (leagues.value.data.length) {
+        const league = leagues.value.data[0]
+        this.setState({
+          league: league.id,
+          season: league.current_season_id,
+        })
+
+        this.fetchStandings(league.id, league.current_season_id)
+      }
+    })
   }
 
   findLeagueById = id => this.props.leagues.find(item => item.id === id)
@@ -50,10 +60,13 @@ class SearchLeague extends Component {
   findSeasonById = (seasons, id) => seasons.find(item => item.id === id)
 
   handleLeagueChange = (event) => {
+    const leagueId = event.target.value
+    const league = this.findLeagueById(leagueId)
     this.setState({
-      league: event.target.value,
-      season: -1,
+      league: leagueId,
+      season: league.current_season_id,
     })
+    this.fetchStandings(league.id, league.current_season_id)
   }
 
   handleSeasonChange = (event) => {
@@ -63,11 +76,15 @@ class SearchLeague extends Component {
       const leagueId = this.state.league
       const seasonId = this.state.season
       if (leagueId >= 0 && seasonId >= 0) {
-        const league = this.findLeagueById(leagueId)
-        const season = this.findSeasonById(league.seasons.data, seasonId)
-        this.props.queryStanding(league, season)
+        this.fetchStandings(leagueId, seasonId)
       }
     })
+  }
+
+  fetchStandings = (leagueId, seasonId) => {
+    const league = this.findLeagueById(leagueId)
+    const season = this.findSeasonById(league.seasons.data, seasonId)
+    this.props.queryStanding(league, season)
   }
 
   renderLeagues() {
@@ -102,9 +119,6 @@ class SearchLeague extends Component {
               id: 'league',
             }}
           >
-            <MenuItem value="">
-              <em>None</em>
-            </MenuItem>
             {this.renderLeagues()}
           </Select>
         </FormControl>
@@ -122,9 +136,6 @@ class SearchLeague extends Component {
                 id: 'season',
               }}
             >
-              <MenuItem value="">
-                <em>None</em>
-              </MenuItem>
               {this.renderSeasons()}
             </Select>
           </FormControl>
@@ -135,7 +146,6 @@ class SearchLeague extends Component {
 }
 
 const mapStateToProps = ({ league }) => ({
-  league: league.details,
   leagues: league.list,
 })
 
