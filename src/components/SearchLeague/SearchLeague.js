@@ -13,6 +13,21 @@ const Form = styled.form`
   flex-direction: row;
   width: 50%;
   margin: 15px 0;
+  overflow: hidden;
+
+  @media only screen and (max-width: 576px) {
+    flex-direction: column;
+    width: 100%;
+  }
+`
+
+const FormSection = styled.div`
+  margin: 10px 5px;
+  width: 50%;
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+  }
 `
 
 class SearchLeague extends Component {
@@ -108,37 +123,41 @@ class SearchLeague extends Component {
   render() {
     return (
       <Form autoComplete="off">
-        <FormControl style={{ width: '50%' }}>
-          <InputLabel htmlFor="league">League</InputLabel>
-          <Select
-            style={{ width: '100%' }}
-            value={this.state.league}
-            onChange={this.handleLeagueChange}
-            inputProps={{
-              name: 'league',
-              id: 'league',
-            }}
-          >
-            {this.renderLeagues()}
-          </Select>
-        </FormControl>
+        <FormSection>
+          <FormControl style={{ width: '100%' }}>
+            <InputLabel htmlFor="league">League</InputLabel>
+            <Select
+              style={{ width: '100%' }}
+              value={this.state.league}
+              onChange={this.handleLeagueChange}
+              inputProps={{
+                name: 'league',
+                id: 'league',
+              }}
+            >
+              {this.renderLeagues()}
+            </Select>
+          </FormControl>
+        </FormSection>
 
         {
           (this.state.league >= 0) &&
-          <FormControl style={{ width: '50%' }}>
-            <InputLabel htmlFor="season">Season</InputLabel>
-            <Select
-              style={{ width: '100%' }}
-              value={this.state.season}
-              onChange={this.handleSeasonChange}
-              inputProps={{
-                name: 'season',
-                id: 'season',
-              }}
-            >
-              {this.renderSeasons()}
-            </Select>
-          </FormControl>
+          <FormSection>
+            <FormControl style={{ width: '100%' }}>
+              <InputLabel htmlFor="season">Season</InputLabel>
+              <Select
+                style={{ width: '100%' }}
+                value={this.state.season}
+                onChange={this.handleSeasonChange}
+                inputProps={{
+                  name: 'season',
+                  id: 'season',
+                }}
+              >
+                {this.renderSeasons()}
+              </Select>
+            </FormControl>
+          </FormSection>
         }
       </Form>
     )

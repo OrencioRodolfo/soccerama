@@ -60,58 +60,19 @@ ShallowWrapper {
     "props": Object {
       "autoComplete": "off",
       "children": Array [
-        <WithStyles(FormControl)
-          style={
-            Object {
-              "width": "50%",
-            }
-          }
-        >
-          <WithStyles(InputLabel)
-            htmlFor="league"
-          >
-            League
-          </WithStyles(InputLabel)>
-          <WithStyles(Select)
-            inputProps={
-              Object {
-                "id": "league",
-                "name": "league",
-              }
-            }
-            onChange={[Function]}
+        <styled.div>
+          <WithStyles(FormControl)
             style={
               Object {
                 "width": "100%",
               }
             }
-            value={-1}
           >
-            <WithStyles(MenuItem)
-              value={1}
-            >
-              <em>
-                sample
-              </em>
-            </WithStyles(MenuItem)>
-          </WithStyles(Select)>
-        </WithStyles(FormControl)>,
-        false,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
             <WithStyles(InputLabel)
               htmlFor="league"
             >
               League
-            </WithStyles(InputLabel)>,
+            </WithStyles(InputLabel)>
             <WithStyles(Select)
               inputProps={
                 Object {
@@ -134,98 +95,23 @@ ShallowWrapper {
                   sample
                 </em>
               </WithStyles(MenuItem)>
-            </WithStyles(Select)>,
-          ],
-          "style": Object {
-            "width": "50%",
-          },
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "League",
-              "htmlFor": "league",
-            },
-            "ref": null,
-            "rendered": "League",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <WithStyles(MenuItem)
-                  value={1}
-                >
-                  <em>
-                    sample
-                  </em>
-                </WithStyles(MenuItem)>,
-              ],
-              "inputProps": Object {
-                "id": "league",
-                "name": "league",
-              },
-              "onChange": [Function],
-              "style": Object {
-                "width": "100%",
-              },
-              "value": -1,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "1",
-                "nodeType": "class",
-                "props": Object {
-                  "children": <em>
-                    sample
-                  </em>,
-                  "value": 1,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "sample",
-                  },
-                  "ref": null,
-                  "rendered": "sample",
-                  "type": "em",
-                },
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      false,
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "autoComplete": "off",
-        "children": Array [
-          <WithStyles(FormControl)
+            </WithStyles(Select)>
+          </WithStyles(FormControl)>
+        </styled.div>,
+        false,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <WithStyles(FormControl)
             style={
               Object {
-                "width": "50%",
+                "width": "100%",
               }
             }
           >
@@ -258,12 +144,9 @@ ShallowWrapper {
               </WithStyles(MenuItem)>
             </WithStyles(Select)>
           </WithStyles(FormControl)>,
-          false,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
+        },
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
@@ -299,7 +182,7 @@ ShallowWrapper {
               </WithStyles(Select)>,
             ],
             "style": Object {
-              "width": "50%",
+              "width": "100%",
             },
           },
           "ref": null,
@@ -370,6 +253,217 @@ ShallowWrapper {
               "type": [Function],
             },
           ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      false,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "autoComplete": "off",
+        "children": Array [
+          <styled.div>
+            <WithStyles(FormControl)
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            >
+              <WithStyles(InputLabel)
+                htmlFor="league"
+              >
+                League
+              </WithStyles(InputLabel)>
+              <WithStyles(Select)
+                inputProps={
+                  Object {
+                    "id": "league",
+                    "name": "league",
+                  }
+                }
+                onChange={[Function]}
+                style={
+                  Object {
+                    "width": "100%",
+                  }
+                }
+                value={-1}
+              >
+                <WithStyles(MenuItem)
+                  value={1}
+                >
+                  <em>
+                    sample
+                  </em>
+                </WithStyles(MenuItem)>
+              </WithStyles(Select)>
+            </WithStyles(FormControl)>
+          </styled.div>,
+          false,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <WithStyles(FormControl)
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            >
+              <WithStyles(InputLabel)
+                htmlFor="league"
+              >
+                League
+              </WithStyles(InputLabel)>
+              <WithStyles(Select)
+                inputProps={
+                  Object {
+                    "id": "league",
+                    "name": "league",
+                  }
+                }
+                onChange={[Function]}
+                style={
+                  Object {
+                    "width": "100%",
+                  }
+                }
+                value={-1}
+              >
+                <WithStyles(MenuItem)
+                  value={1}
+                >
+                  <em>
+                    sample
+                  </em>
+                </WithStyles(MenuItem)>
+              </WithStyles(Select)>
+            </WithStyles(FormControl)>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(InputLabel)
+                  htmlFor="league"
+                >
+                  League
+                </WithStyles(InputLabel)>,
+                <WithStyles(Select)
+                  inputProps={
+                    Object {
+                      "id": "league",
+                      "name": "league",
+                    }
+                  }
+                  onChange={[Function]}
+                  style={
+                    Object {
+                      "width": "100%",
+                    }
+                  }
+                  value={-1}
+                >
+                  <WithStyles(MenuItem)
+                    value={1}
+                  >
+                    <em>
+                      sample
+                    </em>
+                  </WithStyles(MenuItem)>
+                </WithStyles(Select)>,
+              ],
+              "style": Object {
+                "width": "100%",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "League",
+                  "htmlFor": "league",
+                },
+                "ref": null,
+                "rendered": "League",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <WithStyles(MenuItem)
+                      value={1}
+                    >
+                      <em>
+                        sample
+                      </em>
+                    </WithStyles(MenuItem)>,
+                  ],
+                  "inputProps": Object {
+                    "id": "league",
+                    "name": "league",
+                  },
+                  "onChange": [Function],
+                  "style": Object {
+                    "width": "100%",
+                  },
+                  "value": -1,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "1",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <em>
+                        sample
+                      </em>,
+                      "value": 1,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "sample",
+                      },
+                      "ref": null,
+                      "rendered": "sample",
+                      "type": "em",
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
           "type": [Function],
         },
         false,

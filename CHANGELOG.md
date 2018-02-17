@@ -5,10 +5,11 @@
 ### Features
 
 * **LeagueClassification:** Add league classification list ([48fd9f4](https://gitlab.com/orenciorodolfo/soccerama/commit/48fd9f4))
-* **LeagueClassification:** Add sort per columns at league classification list ([bec8274](https://gitlab.com/orenciorodolfo/soccerama/commit/bec8274))
-* **SearchForm:** Add search form ([d0e4e41](https://gitlab.com/orenciorodolfo/soccerama/commit/d0e4e41))
-* **ServiceWorker:** Add service worker ([f73e2f6](https://gitlab.com/orenciorodolfo/soccerama/commit/f73e2f6))
-* **Team squad:** Add screen with the selected team details and squad ([ae47edf](https://gitlab.com/orenciorodolfo/soccerama/commit/ae47edf))
+* **Responsiveness:** Add responsive behaviour for mobile ([84fbd70](https://gitlab.com/orenciorodolfo/soccerama/commit/84fbd70))
+* **SearchForm:** Add search form ([9ceacab](https://gitlab.com/orenciorodolfo/soccerama/commit/9ceacab))
+* **ServiceWorker:** Add service worker ([5fbf36e](https://gitlab.com/orenciorodolfo/soccerama/commit/5fbf36e))
+* **Sort standing list:** Add sort per columns at league classification list ([563fa8a](https://gitlab.com/orenciorodolfo/soccerama/commit/563fa8a))
+* **Team squad:** Add screen with the selected team details and squad ([32d5314](https://gitlab.com/orenciorodolfo/soccerama/commit/32d5314))
 
 
 

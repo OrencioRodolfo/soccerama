@@ -171,6 +171,9 @@ ShallowWrapper {
           </WithStyles(TableRow)>
         </TableBody>
       </WithStyles(Table)>,
+      "style": Object {
+        "overflowY": "auto",
+      },
     },
     "ref": null,
     "rendered": Object {
@@ -996,6 +999,9 @@ ShallowWrapper {
             </WithStyles(TableRow)>
           </TableBody>
         </WithStyles(Table)>,
+        "style": Object {
+          "overflowY": "auto",
+        },
       },
       "ref": null,
       "rendered": Object {

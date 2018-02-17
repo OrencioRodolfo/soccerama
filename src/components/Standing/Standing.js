@@ -153,7 +153,7 @@ class Standing extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ overflowY: 'auto' }}>
         <Table>
           <TableHead>
             <TableRow>
