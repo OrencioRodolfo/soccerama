@@ -35,3 +35,15 @@ if (module.hot) {
     render(NextApp)
   })
 }
+
+(() => {
+  if (!window.navigator.serviceWorker) {
+    return
+  }
+
+  window.navigator.serviceWorker.register('./../sw.js').then((registration) => {
+    console.log('Registration worked!', registration.scope)
+  }).catch((e) => {
+    console.log('Service Woker registration failed!', e)
+  })
+})()
