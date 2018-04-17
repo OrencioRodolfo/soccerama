@@ -6,7 +6,7 @@ The application itself is very simple, it consists in a "standing" list fed with
 Besides this, the user can select a specific team and have access to several details about the team's squad.
 
 Despite this project being really simple, the purpose of it is to demonstrate a set of tools, technologies and techniques about how to build medium/large front-end applications.  
-At this project's [wiki](https://gitlab.com/orenciorodolfo/soccerama/wikis/home) you can find all the related documentation.
+At this project's [wiki](/docs/home.md) you can find all the related documentation.
 
 # Get started
 
@@ -20,9 +20,9 @@ To deploy this project to production you'll need to:
 
 # Contents
 A brief description about several matters around this project's implementation can be found in the following pages.
-- [Setup](https://gitlab.com/orenciorodolfo/soccerama/wikis/home#setup)
-- [Tech stack](https://gitlab.com/orenciorodolfo/soccerama/wikis/home#tech-stack)
-- [Tests](https://gitlab.com/orenciorodolfo/soccerama/wikis/home#tests)
-- [User feedback](https://gitlab.com/orenciorodolfo/soccerama/wikis/home#users-feedback)
-- [Offline first](https://gitlab.com/orenciorodolfo/soccerama/wikis/home#offline-first)
-- [Changelog generation](https://gitlab.com/orenciorodolfo/soccerama/wikis/home#changelog-generation)
+- [Setup](/docs/home.md#setup)
+- [Tech stack](/docs/home.md#tech-stack)
+- [Tests](/docs/home.md#tests)
+- [User feedback](/docs/home.md#users-feedback)
+- [Offline first](/docs/home.md#offline-first)
+- [Changelog generation](/docs/home.md#changelog-generation)
